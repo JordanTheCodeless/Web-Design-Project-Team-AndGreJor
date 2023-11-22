@@ -16,10 +16,10 @@
 #mainNav {
     /* This margin-top is after facing difficulty whith aligning logo and nav */
     margin-top: 60px;
-    flex-wrap: wrap;
+    
 }
 
-#indexDivs {
+#indexDivsImage {
     text-align: center;
     border-top-style: solid;
     border-bottom-style: solid;
@@ -32,13 +32,15 @@
 
 
 #indexImageHeading {
-
     font-size: 90px;
-    color: whitesmoke;
-   
-}
-
+    color: rgb(245, 245, 245);
+   }
 #indexImagePhrase {
     font-size: 45px;
     color: whitesmoke;
+}
+#indexDivsAbout{
+    padding: 30px;
+    text-align: center;
+    background-color: bisque;
 }
