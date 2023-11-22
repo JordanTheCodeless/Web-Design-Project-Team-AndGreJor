@@ -29,21 +29,22 @@
 
     </div>
     </nav>
-    
+    </div>
 
-
-</div>
-
-    
+    <hr>    
         <div class="container-fluid">
+            <!--Used fluid containers to use the full width of the page-->
             <div class="div2title">
-                <h2>Buy things from us you piece of shit!</h2>
+                <h2>Store</h2>
+                <!--Store introduction title-->
             </div>
             <br>
             
             <div class="row align-items-center">
+            <!--Each row fits the elements of a category of products-->
                 <h3>Residential Solutions:</h3>
                 <div class="col" onclick="opt1(1); sbttl();">
+                    <!--Calling the functions opt and sbttl linked in the JS page (This was done for each product)-->
                     <h4>Solar Home Kit:</h4>
                     <img src="../images/ProductsHomePanel.jpg" alt="Pexels image of home solar panel">
                     <ul>
@@ -69,7 +70,7 @@
                     </ul>
                 </div>
             </div>
-
+            <!--Next category of items-->
             <div class="row align-items-center">
                 <h3>Commercial/Industrial Solutions:</h3>
                 <div class="col" onclick="opt2(1); sbttl();">
@@ -97,7 +98,7 @@
                     </ul>
                 </div>
             </div>
-
+            <!--Next category of items-->
             <div class="row align-items-center">
                 <h3>Sustainable Technology Services:</h3>
                 <div class="col" onclick="opt3(1); sbttl();">
@@ -126,21 +127,83 @@
                 </div>
             </div>
 
+            <br><hr>
 
-            <div>
-                <p id="opt1tot">Option 1 is:</p>
-                <p id="opt2tot">Option 2 is:</p>
-                <p id="opt3tot">Option 3 is:</p>
-                <p id="subtotal">Subtotal is:</p>
-                <p id="tax">Tax is:</p>
-                <p id="totaInfo">Total is:</p>
+            <div class="row align-items-center">
+                <div class="col">
+                   <!--Div to display the total selected from each category.-->
+                    
+                    <p id="opt1tot">Option 1 is:</p> <input type="button" value="Remove" onclick="opt1(0); sbttl();">
+                    <p id="opt2tot">Option 2 is:</p> <input type="button" value="Remove" onclick="opt2(0); sbttl();">
+                    <p id="opt3tot">Option 3 is:</p> <input type="button" value="Remove" onclick="opt3(0); sbttl();">
+                    <p id="subtotal">Subtotal is: 0$</p>
+                    <p id="tax">Tax is: 0$</p>
+                    <p id="totaInfo">Total is: 0$</p>
+                    
+                </div>
+                <!--Fake payment form-->
+                <div class="col">
+                    <form action="mailto:fakemail123@mail.mx?subject=FormSubmission" method="post" enctype="text/plain">
+                        <table>
+                            <tr>
+                                <td>Amount to pay:</td>
+                                <td id="amnt"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="emailinp" required></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Payment details</td>
+                                <td></td>
+                                <td></td>
+                                
+                            </tr>
+                            <tr>
+                                <td>Name in card:</td>
+                                <td><input type="text" name="username" required></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Card number:</td>
+                                <td><input type="text" name="creditcard" pattern="[0-9]{16}" title="16 digit card" required></td>
+                                <!-- Can only accept 16 digits -->
+                                <td></td>
+                                <td></td>
+                                <!--Added table rows for HTML table validation (All rows should have the same columns)-->
+                            </tr>
+                            <tr>
+                                <td>Expiry date:</td>
+                                <td><input type="text" name="expdate" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/\d{2}$" title="expiry date" required></td>
+                                <!-- pattern for MM/YY -->
+                                <td>CVV:</td>
+                                <td><input type="text" name="cvv" pattern="[0-9]{3}" title="CVV" required></td>
+                                <!-- Can only accept 3 digits -->
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="submit" value="Submit payment">
+                    </form>
+                    
+                </div>
             </div>
+            <hr>
+
+            
+
+            
+
             
         </div>
-    </div>
+    
 
     <script src="../script/store.js"></script>
-    <!-- bootstrap java don't delete -->
+    <!-- bootstrap java-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

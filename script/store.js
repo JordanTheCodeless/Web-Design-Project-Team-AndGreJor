@@ -2,6 +2,8 @@ opt1(0);
 opt2(0);
 opt3(0);
 
+//Called the functions first so the value of each object was set to 0, enabling the use of the sbttl function without the need of selecting all of the options
+
 function opt1(optn1){
     switch (optn1){
         case 1:
@@ -20,6 +22,8 @@ function opt1(optn1){
     }
     document.getElementById("opt1tot").innerHTML = "Option 1 is: " + optn1value + "$";
 }
+
+//Function called in category 1 to determine the price of the selected object
 
 function opt2(optn2){
     switch (optn2){
@@ -40,6 +44,8 @@ function opt2(optn2){
     document.getElementById("opt2tot").innerHTML = "Option 2 is: " + optn2value + "$";
 }
 
+//Function called in category 2 to determine the price of the selected object
+
 function opt3(optn3){
     switch (optn3){
         case 1:
@@ -59,11 +65,19 @@ function opt3(optn3){
     document.getElementById("opt3tot").innerHTML = "Option 3 is: " + optn3value + "$";
 }
 
+//Function called in category 3 to determine the price of the selected object
+
 function sbttl(){
     var subtot = optn1value + optn2value + optn3value;
     document.getElementById("subtotal").innerHTML = "Subtotal is: " + subtot + "$";
     var taxF = subtot * .16;
     document.getElementById("tax").innerHTML = "Tax is: " + taxF + "$";
     var totalF = subtot + taxF;
-    document.getElementById("totaInfo").innerHTML = "Total is: " + totalF + "$"
+    var totmoney = totalF.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    //Gives the format of currency to the final product
+    document.getElementById("totaInfo").innerHTML = "Total is: " + totmoney;
+    document.getElementById("amnt").innerHTML = totmoney
 }
+
+//Function to modify and dinamically display the amount of money owed for each service
+
