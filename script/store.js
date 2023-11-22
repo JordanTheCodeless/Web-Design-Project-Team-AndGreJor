@@ -64,6 +64,6 @@ function sbttl(){
     document.getElementById("subtotal").innerHTML = "Subtotal is: " + subtot + "$";
     var taxF = subtot * .16;
     document.getElementById("tax").innerHTML = "Tax is: " + taxF + "$";
-    var totalF = taxF + subtot;
+    var totalF = subtot + taxF;
     document.getElementById("totaInfo").innerHTML = "Total is: " + totalF + "$"
 }
