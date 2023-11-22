@@ -1,17 +1,44 @@
+
+
 /* This is targeting the main navigation links and styling */
-#mainNav a{
+#mainNav a {
     /* removes underline */
     text-decoration: none;
-    padding:3px;
+    padding: 3px;
     margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     /* Same colour as logo  */
     color: #a2ba26;
-    
-   }
-   #mainNav{
+
+}
+
+#mainNav {
+    /* This margin-top is after facing difficulty whith aligning logo and nav */
     margin-top: 60px;
     flex-wrap: wrap;
-   }
-  
+}
+
+#indexDivs {
+    text-align: center;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url('../images/index-Background-Image.png');
+    opacity: 0.75;
+}
+
+
+
+#indexImageHeading {
+
+    font-size: 90px;
+    color: whitesmoke;
+   
+}
+
+#indexImagePhrase {
+    font-size: 45px;
+    color: whitesmoke;
+}
