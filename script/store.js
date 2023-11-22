@@ -5,13 +5,13 @@ opt3(0);
 function opt1(optn1){
     switch (optn1){
         case 1:
-            optn1value = 10;
+            optn1value = 3000;
             break;
         case 2:
-            optn1value = 20;
+            optn1value = 400;
             break;
         case 3:
-            optn1value = 30;
+            optn1value = 1500;
             break;
         default:
         optn1value = 0;
@@ -24,13 +24,13 @@ function opt1(optn1){
 function opt2(optn2){
     switch (optn2){
         case 1:
-            optn2value = 10;
+            optn2value = 5000;
             break;
         case 2:
-            optn2value = 20;
+            optn2value = 2000;
             break;
         case 3:
-            optn2value = 30;
+            optn2value = 13000;
             break;
         default:
         optn2value = 0;
@@ -43,13 +43,13 @@ function opt2(optn2){
 function opt3(optn3){
     switch (optn3){
         case 1:
-            optn3value = 10;
+            optn3value = 2500;
             break;
         case 2:
-            optn3value = 20;
+            optn3value = 500;
             break;
         case 3:
-            optn3value = 30;
+            optn3value = 350;
             break;
         default:
         optn3value = 0;
