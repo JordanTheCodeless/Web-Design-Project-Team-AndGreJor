@@ -40,91 +40,113 @@
             </div>
             <br>
 
-
-
-
-            <!--prodWrapper para todo-->
-
-
-
-
             <div class="row align-items-center">
             <!--Each row fits the elements of a category of products-->
                 <h3>Residential Solutions:</h3>
-                <div class="col product" onclick="opt1(1); sbttl(); selected(this);">
-                    <!--Calling the functions opt and sbttl linked in the JS page (This was done for each product)-->
+
+                <div class="col product one" onclick="opt1(1); sbttl(); selected(this);">
+                    <!--Calling the functions opt, sbttl and slelected linked in the JS page (This was done for each product, Further commenting in the store.js page explaining their functionality)-->
                     <h4>Solar Home Kit:</h4>
                     <img src="../images/ProductsHomePanel.jpg" alt="Pexels image of home solar panel">
                     <p>Price: 3,000$</p>
                     <p>Compact solar panel system designed for residential rooftops.</p>
                 </div>
-                <div class="col product" onclick="opt1(2); sbttl(); selected(this);">
+
+                <div class="col product one" onclick="opt1(2); sbttl(); selected(this);">
+                    <!--Product class used to format the 9 elements in all the categories-->
                     <h4>Energy Storage Bundle</h4>
                     <img src="../images/ProductsEnergyStorage.jpg" alt="Pexels image of">
                     <p>Price: 400$</p>
                     <p>Home energy storage solution with a lithium-ion battery pack.</p>
                 </div>
-                <div class="col product" onclick="opt1(3); sbttl(); selected(this);">
+
+                <div class="col product one" onclick="opt1(3); sbttl(); selected(this);">
+                    <!--The One, Two and Three classes were used to Unselect the element of the list in case it was not desired anymore-->
                     <h4>Smart Home Energy Management Package:</h4>
                     <img src="../images/ProductsSmartEcoHome.jpg" alt="Pexels image of smart device">
                     <p>Price: 1,500$</p>
                     <p>Comprehensive smart home energy management system.</p>
                 </div>
+
             </div>
+
+
+
             <!--Next category of items-->
+
+
+
             <div class="row align-items-center">
                 <h3>Commercial/Industrial Solutions:</h3>
-                <div class="col product" onclick="opt2(1); sbttl(); selected(this);">
+
+                <div class="col product two" onclick="opt2(1); sbttl(); selected(this);">
                     <h4>Large-scale Solar Farm Installation:</h4>
                     <img src="../images/ProductsIndustrialPanel.jpg" alt="Pexels image of multiple solar panels">
                     <p>Price: 5,000$</p>
                     <p>Customized solar solutions for businesses and industrial facilities.</p>
                 </div>
-                <div class="col product" onclick="opt2(2); sbttl(); selected(this);">
+
+                <div class="col product two" onclick="opt2(2); sbttl(); selected(this);">
                     <h4>Singular Windmill installation</h4>
                     <img src="../images/ProductsSingleWindmill.jpg" alt="Pexels image of Windmill">
                     <p>Price: 2,000$</p>
                     <p>Instalation of one Windmill generator.</p>
                 </div>
-                <div class="col product" onclick="opt2(3); sbttl(); selected(this);">
+
+                <div class="col product two" onclick="opt2(3); sbttl(); selected(this);">
                     <h4>Multiple Windmill installation</h4>
                     <img src="../images/ProductsMultyWindmill.jpg" alt="Pexels image of windmills">
                     <p>Price: 13,000$</p>
                     <p>Instalation of multiple Windmill generators.</p>
                 </div>
+
             </div>
+
+
+
             <!--Next category of items-->
+
+
+
             <div class="row align-items-center">
                 <h3>Sustainable Technology Services:</h3>
-                <div class="col product" onclick="opt3(1); sbttl(); selected(this);">
+
+                <div class="col product three" onclick="opt3(1); sbttl(); selected(this);">
                     <h4>Bespoke Renewable Energy Solutions:</h4>
                     <img src="../images/ProductEngTailoring.jpg" alt="Pexels image of Engineer">
                     <p>Price: 2,500$</p>
                     <p>Tailored renewable energy solutions for specific industries.</p>
                 </div>
-                <div class="col product" onclick="opt3(2); sbttl(); selected(this);">
-                    <h4>Educational Workshops and Training Sessions:</h4>
+
+                <div class="col product three" onclick="opt3(2); sbttl(); selected(this);">
+                    <h4>Educational Workshops:</h4>
                     <img src="../images/ProductsCapacitation.jpg" alt="Pexels image of Teacher">
                     <p>Price: 500$</p>
-                    <p>Informative workshops on renewable energy, energy efficiency, and sustainability.</p>
+                    <p>Informative workshops on renewable energy.</p>
                 </div>
-                <div class="col product" onclick="opt3(3); sbttl(); selected(this);">
+
+                <div class="col product three" onclick="opt3(3); sbttl(); selected(this);">
                     <h4>Windmill manipulation capacitation</h4>
                     <img src="../images/ProductsWindmillCapacitation.jpg" alt="Pexels image of Teacher in a room">
                     <p>Price: 350$</p>
                     <p>Advanced Wind Turbine Control Systems</p>
                 </div>
+
             </div>
 
+
+
             <br><hr>
+
+
 
             <div class="row align-items-center">
                 <div class="col">
                    <!--Div to display the total selected from each category.-->
                     
-                    <p id="opt1tot">Option 1 is:</p> <input type="button" value="Remove" onclick="opt1(0); sbttl();">
-                    <p id="opt2tot">Option 2 is:</p> <input type="button" value="Remove" onclick="opt2(0); sbttl();">
-                    <p id="opt3tot">Option 3 is:</p> <input type="button" value="Remove" onclick="opt3(0); sbttl();">
+                    <p id="opt1tot">Option 1 is:</p> <input type="button" value="Remove" onclick="opt1(0); sbttl(); removeOne();">
+                    <p id="opt2tot">Option 2 is:</p> <input type="button" value="Remove" onclick="opt2(0); sbttl(); removeTwo();">
+                    <p id="opt3tot">Option 3 is:</p> <input type="button" value="Remove" onclick="opt3(0); sbttl(); removeThree();">
                     <p id="subtotal">Subtotal is: 0$</p>
                     <p id="tax">Tax is: 0$</p>
                     <p id="totaInfo">Total is: 0$</p>
