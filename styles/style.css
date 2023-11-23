@@ -45,6 +45,8 @@
     background-color: bisque;
 }
 
+/*Products page CSS Start*/
+
 .product {
     background-color: rgb(128, 128, 128, 0.3);
     height: 500px;
@@ -71,3 +73,49 @@
 .prodPayment{
     border-left: 2px solid black;
 }
+
+/*Process page CSS End*/
+
+/*Process page CSS Start*/
+
+.processcol {
+    background-color: rgba(134, 168, 133, 0.3);
+    margin: 5px;
+    font-size: larger;
+    padding: 30px;
+    text-align: justify;
+}
+
+.processimgstop {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+.processimgsbtm {
+    float:right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+
+.processReference{
+    font-style: italic;
+    font-size: xx-small;
+}
+
+#processNav{
+    position: fixed;
+    top: 30%;
+    left: 35px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    font-size: large;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+
+/*Process page CSS End*/
