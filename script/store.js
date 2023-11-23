@@ -65,6 +65,29 @@ function opt3(optn3){
     document.getElementById("opt3tot").innerHTML = "Option 3 is: " + optn3value + "$";
 }
 
+
+
+//MAKE IT SO WHEN REMOVE IS CLICKED IT DESELECTS IT
+
+//This function selects a div from the categories and deselects every other 
+function selected(slc) {
+    // Get the parent category div
+    var category = slc.closest('.row');
+
+    alert(slc)
+
+    // Deselect all objects in the same category
+    var objectsInCategory = category.querySelectorAll('.product');
+    objectsInCategory.forEach(function (obj) {
+        obj.classList.remove('selected');
+    });
+
+    // Select the clicked object
+    slc.classList.add('selected');
+}
+
+
+
 //Function called in category 3 to determine the price of the selected object
 
 function sbttl(){
