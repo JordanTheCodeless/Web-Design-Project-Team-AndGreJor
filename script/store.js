@@ -1,9 +1,11 @@
 opt1(0);
 opt2(0);
 opt3(0);
+sbttl();
 
 //Called the functions first so the value of each object was set to 0, enabling the use of the sbttl function without the need of selecting all of the options
 
+//Function called in category 1 to determine the price of the selected object
 function opt1(optn1){
     switch (optn1){
         case 1:
@@ -23,7 +25,7 @@ function opt1(optn1){
     document.getElementById("opt1tot").innerHTML = "Option 1 is: " + optn1value + "$";
 }
 
-//Function called in category 1 to determine the price of the selected object
+//Function called in category 2 to determine the price of the selected object
 
 function opt2(optn2){
     switch (optn2){
@@ -44,7 +46,7 @@ function opt2(optn2){
     document.getElementById("opt2tot").innerHTML = "Option 2 is: " + optn2value + "$";
 }
 
-//Function called in category 2 to determine the price of the selected object
+//Function called in category 3 to determine the price of the selected object
 
 function opt3(optn3){
     switch (optn3){
@@ -71,16 +73,16 @@ function opt3(optn3){
 
 //This function selects a div from the categories and deselects every other 
 function selected(slc) {
-    // Get the parent category div
+    //Get the parent category div
     var category = slc.closest(".row");
 
-    // Deselect all objects in the same category
+    //Deselect all objects in the same category
     var objectsInCategory = category.querySelectorAll(".product");
     objectsInCategory.forEach(function (obj) {
         obj.classList.remove("selected");
     });
 
-    // Select the clicked object
+    //Select the clicked object
     slc.classList.add("selected");
 }
 

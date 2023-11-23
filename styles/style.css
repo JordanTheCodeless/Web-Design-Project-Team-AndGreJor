@@ -45,16 +45,29 @@
     background-color: bisque;
 }
 
-.product{
+.product {
     background-color: rgb(128, 128, 128, 0.3);
-    transition: background-color 0.3s;
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
 }
-
 .product.selected {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .product:hover{
     transform: scale(1.1);
-    transition: transform 0.3 ease-out;
+    transition: transform 0.3s ease-out;
+}
+
+.prodCategory{
+    margin-bottom: 50px;
+}
+
+.prodPayment{
+    border-left: 2px solid black;
 }
