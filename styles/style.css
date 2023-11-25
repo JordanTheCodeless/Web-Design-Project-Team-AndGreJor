@@ -58,3 +58,21 @@
     transform: scale(1.1);
     transition: transform 0.3 ease-out;
 }
+.TitlesRenew{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.TitlesEle{
+    border: 2px solid black;
+}
+.hidden{
+    display: none;
+}
+#activeTxt{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid black;
+    padding: 30px;
+}
