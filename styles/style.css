@@ -1,5 +1,14 @@
+body{
+    background-image: url(../images/background-image.jpg);
+    background-image: 100vh 100vw fit-content;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
+}
 
+  
 /* This is targeting the main navigation links and styling */
 #mainNav a {
     /* removes underline */
@@ -25,8 +34,8 @@
     border-bottom-style: solid;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url('../images/index-Background-Image.png');
-    opacity: 0.75;
+/*  */
+    
 }
 
 
