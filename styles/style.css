@@ -66,16 +66,18 @@ body{
     align-items: center;
 }
 .TitlesEle{
-    border: 2px solid black;
+    cursor: pointer;
+    text-decoration: underline;
 }
 .hidden{
     display: none;
 }
 #activeTxt{
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid black;
+    text-align: center;
     padding: 30px;
+    background-color: rgba(134, 168, 133, 0.3);
+    margin: 60px auto;
+    width: 70%;
 }
 .prodCategory{
     margin-bottom: 50px;
