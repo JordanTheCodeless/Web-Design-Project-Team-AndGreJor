@@ -1,6 +1,6 @@
 /* This is for all HTML pages ! */
 body{
-    background-image: url(../images/background-image.jpg);
+    background-image: url('../images/background-image.jpg');
     background-image: 100vh 100vw fit-content;
     background-position: center center;
     background-repeat: no-repeat;
@@ -14,29 +14,22 @@ body{
 
 #indexDivsImage {
     text-align: center;
-    border-top-style: solid;
-    border-bottom-style: solid;
-    padding-top: 200px;
-    padding-bottom: 200px;
-/*  */
-    
+    background: hsl(0, 0%, 50%, 0.2);
+ }
+ #indexDivsAbout{
+    background: hsl(0, 0%, 50%, 0.2);
+ }
+.indexLogo{
+    height: 100%;
+    width:100%;
+  }
+  .aboutUsPara{
+    font-size: 20px;
+color: #FFFDFA;  
 }
 
 
 
-#indexImageHeading {
-    font-size: 90px;
-    color: rgb(245, 245, 245);
-   }
-#indexImagePhrase {
-    font-size: 45px;
-    color: whitesmoke;
-}
-#indexDivsAbout{
-    padding: 30px;
-    text-align: center;
-    background-color: bisque;
-}
 
 /*Products page CSS Start*/
 

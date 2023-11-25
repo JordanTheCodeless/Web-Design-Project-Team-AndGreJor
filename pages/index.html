@@ -6,92 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../styles/style.css">
     <!-- javascript deferred -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <title>HomePage</title>
+    <title>Homepage</title>
 </head>
 
 <body>
-    <!-- Header of page -->
-    <!-- <header>
-        <div id="mainHeader"> -->
-            <!-- This is the navbar from Bootstrap -->
-            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-white"> -->
-                <!-- Main logo the reason for putting into a div is to seperate the main logo and main nav links-->
 
-                <!-- <div id="mainLogo" role="navigation">
-                    <a href="../pages/index.html" class="navbar-brand">
-                        
-                        <img src="../images/GigaEnergy-logo-resized-nav.png" alt=""></a>
+    <header>
+        <!-- NavBar template from Bootstrap  -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GigaEnergy</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./renewable.html">Renewable</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./products.html">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./interact.html">Interact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./process.html">Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div id="mainNav" role="navigation">
-                    <a class=""href="./renewable.html">Renewable</a>
-                    <a class=""href="./products.html">Products</a>
-                    <a class=""href="./interact.html">Interact</a>
-                    <a class=""href="./process.html">Process</a>
-                    <a class=""href="#contact">Contact</a>
+            </div>
+        </nav>
 
-                </div>
-            </nav>
-    </header> -->
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-        <a class="navbar-brand" href="index.html">GigaEnergy</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-
-           
-            <li class="nav-item ">
-                <a class="nav-link" href="./renewable.html">Renewable</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="./products.html">Products</a>
-              </li>
-                <li class="nav-item">
-              <a class="nav-link" href="./interact.html">Interact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./process.html">Process</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          </div>
-        </div>
-      </nav>
-
-</header>
+    </header>
     <main>
-        <div class="container-fluid">
-            <!-- This is a bootstrap template for full width of page -->
-            <section class="parallax-bg-1 text-center">
-
-                <div id="indexDivsImage">
-                    <h2 id="indexImageHeading">
-                        GigaEnergy
-                    </h2>
-                    <p id="indexImagePhrase">In Search of a More Renewable Future </p>
+        <!-- Bootstrap container -->
+        <div class="container">
+            <!-- Divs containing the companys logo and saying and an About us section. -->
+            <div id="indexDivsImage">
+                    <img class="indexLogo" src="../images/GigaEnergy-logo.png" alt="Main Logo">
+                    <div id="indexDivsAbout">
+                        <p class="aboutUsPara">
+                            The aim of GigaEnergy is to transform the energy landscape.
+                            Renewable energy solutions that are cutting edge and reliable. We strive
+                            to foster the shift towards a low carbon economy through
+                            the global challenges of climate change and energy security.</p>
+                    </div>
                 </div>
-
-            </section>
-            <div id="indexDivsAbout">
-                <h2>Our Mission</h2>
-                <p>
-                    The aim of GigaEnergy is to transform the energy landscape.
-                    Renewable energy solutions that are cutting edge and reliable. We strive
-                    to foster the shift towards a low carbon economy through
-                    the global challenges of climate change and energy security.</p>                
-
 
 
         </div>
@@ -100,7 +72,7 @@
     </main>
 
 
-    </div>
+    </div> 
 
 
 
