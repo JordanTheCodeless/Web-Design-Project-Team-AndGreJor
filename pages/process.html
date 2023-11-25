@@ -11,30 +11,49 @@
     <title>Process</title>
 </head>
 <body>
-    <!-- Header of page -->
-    <div id="mainHeader">
-        <!-- This is the navbar from Bootstrap -->
-        <nav class="navbar navbar-light bg-white">
-        <!-- Main logo the reason for putting into a div is to seperate the main logo and main nav links-->
-        <div id="mainLogo">
-            <a href="../pages/index.html" class="navbar-brand">
-            <!-- Image from SquareSpace -->
-            <img src="../images/GigaEnergy-logo-resized-nav.png" alt=""></a>
-        </div>
-        <div id="mainNav">
-            <a href="./renewable.html">Renewable</a>
-            <a href="./products.html">Products</a>
-            <a href="./interact.html">Interact</a>
-            <a href="./process.html">Process</a>
-            <a href="#contact">Contact</a>
-
-        </div>
-        </nav>
-        
-
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+            <a class="navbar-brand" href="./index.html">GigaEnergy</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
     
+               
+                <li class="nav-item ">
+                    <a class="nav-link" href="./renewable.html">Renewable</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link" href="./products.html">Products</a>
+                  </li>
+                    <li class="nav-item">
+                  <a class="nav-link" href="./interact.html">Interact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./process.html">Process</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+              </div>
+            </div>
+          </nav>
+    
+    </header>
+    
+<!--Small NavBar for the process page, to navigate throught the different types of renewable energies-->
+
+    <div id="processNav">
+        <a href="#solar">Solar energy</a><br>
+        <a href="#wind">Wind energy</a><br>
+        <a href="#goethermal">Geothermal energy</a><br>
+        <a href="#hydropower">Hydropower energy</a><br>
+        <a href="#ocean">Ocean energy</a><br>
+        <a href="#bioenergy">Bioenergy</a><br>
     </div>
-    
     
     <div class="container-fluid">
         <!--Fluid container so the page uses the entire extent of the web page-->
@@ -47,40 +66,49 @@
                     Explore the transformative world of renewable energy—solar, wind, geothermal, hydropower, ocean, and bioenergy. These technologies offer cleaner, greener solutions for a sustainable future. Join us in uncovering their unique strengths and contributions to mitigating climate change. Welcome to the forefront of renewable energy.
                 </p>
             </div>
-        <!--Each COL div is in charge of displaying a certain topic in an organized manner-->
-            <div class="col-md-5 col-sm-12">
-                <h3>Solar energy</h3>
 
-                <img src="../images/ProcessSolarEnergy.jpg" alt="Pixaby Photo of a solar panel">
+            <!--Each COL div is in charge of displaying a certain topic in an organized manner-->
+
+            <div class="col-md-8 col-sm-12 processcol">
+                <!--Bootstrap columns, organized so when -->
+                <h3 id="solar">Solar energy</h3><br>
+
+                <img class="processimgstop" src="../images/ProcessSolarEnergy.jpg" alt="Pixaby Photo of a solar panel">
+
                 <p>
-                    "Solar energy is the most abundant of all energy resources and can even be harnessed in cloudy weather. The rate at which solar energy is intercepted by the Earth is about 10,000 times greater than the rate at which humankind consumes energy.
-
-                    Solar technologies can deliver heat, cooling, natural lighting, electricity, and fuels for a host of applications. Solar technologies convert sunlight into electrical energy either through photovoltaic panels or through mirrors that concentrate solar radiation.
-
+                    "Solar energy is the most abundant of all energy resources and can even be harnessed in cloudy weather. The rate at which solar energy is intercepted by the Earth is about 10,000 times greater than the rate at which humankind consumes energy. Solar technologies can deliver heat, cooling, natural lighting, electricity, and fuels for a host of applications. Solar technologies convert sunlight into electrical energy either through photovoltaic panels or through mirrors that concentrate solar radiation.
+                    <br><br>
                     Although not all countries are equally endowed with solar energy, a significant contribution to the energy mix from direct solar energy is possible for every country.
-
+                    <br><br>
                     The cost of manufacturing solar panels has plummeted dramatically in the last decade, making them not only affordable but often the cheapest form of electricity. Solar panels have a lifespan of roughly 30 years, and come in variety of shades depending on the type of material used in manufacturing."
                 </p>
-                <p>
+
+                <p class="processReference">
                     Nations, United. “What Is Renewable Energy?” United Nations, 2023, www.un.org/en/climatechange/what-is-renewable-energy?gclid=Cj0KCQiA6vaqBhCbARIsACF9M6n-ha3vCzAKbAcXO3-A2zmsSCSZCIUVv2mvyJMurzH0vtaKa_RfnlgaAqLuEALw_wcB. Accessed 22 Nov. 2023.
                 </p>
             </div>
-            <div class="col-md-5 col-sm-12">
-                <h3>Wind Energy</h3> 
+
+            <div class="col-md-8 col-sm-12 processcol">
+                <h3 id="wind">Wind Energy</h3><br>
+
+                <img class="processimgsbtm" src="../images/ProcessWindPower.jpg" alt="Pixaby Photo of Wind energy">
+
                 <p>
                     Anything that moves has kinetic energy, and scientists and engineers are using the wind's kinetic energy to generate electricity. Wind energy, or wind power, is created using a wind turbine, a device that channels the power of the wind to generate electricity.
-
-                    The wind blows the blades of the turbine, which are attached to a rotor. The rotor then spins a generator to create electricity. There are two types of wind turbines: the horizontal-axis wind turbines (HAWTs) and vertical-axis wind turbines (VAWTs). HAWTs are the most common type of wind turbine. They usually have two or three long, thin blades that look like an airplane propeller. The blades are positioned so that they face directly into the wind. VAWTs have shorter, wider curved blades that resemble the beaters used in an electric mixer.
+                    <br><br>
+                    The wind blows the blades of the turbine, which are attached to a rotor. The rotor then spins a generator to create electricity. There are two types of wind turbines: the horizontal-axis wind turbines (HAWTs) and vertical-axis wind turbines (VAWTs). HAWTs are  the most common type of wind turbine. They usually have two or three long, thin blades that look like an airplane propeller. The blades are positioned so that they face directly into the wind. VAWTs have shorter, wider curved blades that resemble the beaters used in an electric mixer.
                 </p>
-                <p>
+                
+                <p class="processReference">
                     National Geographic Society. “Wind Energy | National Geographic Society.” Education.nationalgeographic.org, 20 May 2022, education.nationalgeographic.org/resource/wind-energy/. Accessed 22 Nov. 2023.
                 </p>
-                <img src="../images/ProcessWindPower.jpg" alt="Pixaby Photo of Wind energy">
             </div>
-        <div class="row justify-content-center">
-            <div class="col-md-5 col-sm-12">
-                <h3>Geothermal Energy</h3>
-                <img src="../images/ProcessGeoPOwer.jpg" alt="Pixaby Photo of GeoThermal energy">
+        
+            <div class="col-md-8 col-sm-12 processcol">
+                <h3 id="goethermal">Geothermal Energy</h3><br>
+
+                <img class="processimgstop" src="../images/ProcessGeoPOwer.jpg" alt="Pixaby Photo of GeoThermal energy">
+
                 <p>
                     Geothermal energy utilizes the accessible thermal energy from the Earth's interior. Heat is extracted from geothermal reservoirs using wells or other means.
 
@@ -88,26 +116,31 @@
 
                     Once at the surface, fluids of various temperatures can be used to generate electricity. The technology for electricity generation from hydrothermal reservoirs is mature and reliable, and has been operating for more than 100 years.
                 </p>
-                <p>Nations, United. “What Is Renewable Energy?” United Nations, 2023, www.un.org/en/climatechange/what-is-renewable-energy?gclid=Cj0KCQiA6vaqBhCbARIsACF9M6n-ha3vCzAKbAcXO3-A2zmsSCSZCIUVv2mvyJMurzH0vtaKa_RfnlgaAqLuEALw_wcB. Accessed 22 Nov. 2023.</p>
+
+                <p class="processReference">Nations, United. “What Is Renewable Energy?” United Nations, 2023, www.un.org/en/climatechange/what-is-renewable-energy?gclid=Cj0KCQiA6vaqBhCbARIsACF9M6n-ha3vCzAKbAcXO3-A2zmsSCSZCIUVv2mvyJMurzH0vtaKa_RfnlgaAqLuEALw_wcB. Accessed 22 Nov. 2023.</p>
             </div>
-            <div class="col-md-5 col-sm-12">
-                <h3>Hydropower</h3>
+
+            <div class="col-md-8 col-sm-12 processcol">
+                <h3 id="hydropower">Hydropower</h3><br>
+
+                <img class="processimgsbtm" src="../images/ProcessHydroPower.jpg" alt="Pixaby Photo of Hydropower">
                 
                 <p>
                     Hydropower, or hydroelectric power, is one of the oldest and largest sources of renewable energy, which uses the natural flow of moving water to generate electricity. Hydropower currently accounts for 28.7% of total U.S. renewable electricity generation and about 6.2% of total U.S. electricity generation. 
 
                     While most people might associate the energy source with the Hoover Dam—a huge facility harnessing the power of an entire river behind its wall—hydropower facilities come in all sizes. Some may be very large, but they can be tiny, too, taking advantage of water flows in municipal water facilities or irrigation ditches. They can even be “damless,” with diversions or run-of-river facilities that channel part of a stream through a powerhouse before the water rejoins the main river. Whatever the method, hydropower is much easier to obtain and more widely used than most people realize. In fact, all but two states (Delaware and Mississippi) use hydropower for electricity, some more than others. For example, in 2020 about 66% of the state of Washington's electricity came from hydropower. 
                 </p>
-                <p>
+                <p class="processReference">
                     US Department Of Energy. “Hydropower Basics.” Energy.gov, 2014, www.energy.gov/eere/water/hydropower-basics. Accessed 22 Nov. 2023.
                 </p>
-                <img src="../images/ProcessHydroPower.jpg" alt="Pixaby Photo of Hydropower">
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-5 col-sm-12">
-                <h3>Ocean energy</h3>
-                <img src="../images/ProcessWaveEnergy.jpg" alt="Pixaby Photo of waves">
+        
+        
+            <div class="col-md-8 col-sm-12 processcol">
+                <h3 id="ocean">Ocean energy</h3><br>
+
+                <img class="processimgstop" src="../images/ProcessWaveEnergy.jpg" alt="Pixaby Photo of waves">
+
                 <p>
                     Wave energy is generated by converting the energy within ocean waves (swells) into electricity. There are many different wave energy technologies being developed and trialled to convert wave energy into electricity.
 
@@ -117,12 +150,16 @@
                         Tidal stream (or current) technologies capture the kinetic energy of currents flowing in and out of tidal areas (such as seashores). Tidal stream devices operate in arrays, similar to wind turbines.
                     Ocean thermal energy is generated by converting the temperature difference between the ocean's surface water and deeper water into energy. Ocean thermal energy conversion (OTEC) plants may be land-based as well as floating or grazing.
                 </p>
-                <p>
+
+                <p class="processReference">
                     ARENA. “Ocean Energy - Australian Renewable Energy Agency (ARENA).” Australian Renewable Energy Agency, 2018, arena.gov.au/renewable-energy/ocean/. Accessed 22 Nov. 2023.
                 </p>
             </div>
-            <div class="col-md-5 col-sm-12">
-                <h3>Bioenergy</h3>
+            <div class="col-md-8 col-sm-12 processcol">
+                <h3 id="bioenergy">Bioenergy</h3><br>
+
+                <img class="processimgsbtm" src="../images/ProcessBioEnergy.jpg" alt="Pixaby Photo of Bioenergy">
+
                 <p>
                     When biomass is used as an energy source, it's referred to as "feedstock". Feedstocks can be grown specifically for their energy content (an energy crop), or they can be made up of waste products from industries such as agriculture, food processing or timber production.
 
@@ -132,16 +169,15 @@
 
                     Bioenergy is a very flexible energy source. It can be turned up and down quickly to meet demand, making it a great backup for weather-dependent renewable technologies such as wind and solar.
                 </p>
-                <p>
+
+                <p class="processReference">
                     Goodenergy. “What Is Bioenergy?” Good Energy, 22 Nov. 2021, www.goodenergy.co.uk/what-is-bioenergy/. Accessed 22 Nov. 2023.
                 </p>
-                <img src="../images/ProcessBioEnergy.jpg" alt="Pixaby Photo of Bioenergy">
             </div>
-        </div>    
-            
         </div>
     </div>
 
+    
 
      <!-- bootstrap java-->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

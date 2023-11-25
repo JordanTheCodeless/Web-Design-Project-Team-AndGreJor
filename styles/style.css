@@ -1,23 +1,16 @@
-
-
-/* This is targeting the main navigation links and styling */
-#mainNav a {
-    /* removes underline */
-    text-decoration: none;
-    padding: 3px;
-    margin-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    /* Same colour as logo  */
-    color: #a2ba26;
+/* This is for all HTML pages ! */
+body{
+    background-image: url(../images/background-image.jpg);
+    background-image: 100vh 100vw fit-content;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 
 }
 
-#mainNav {
-    /* This margin-top is after facing difficulty whith aligning logo and nav */
-    margin-top: 60px;
-    
-}
+  
+/* index.html CSS */
 
 #indexDivsImage {
     text-align: center;
@@ -25,8 +18,8 @@
     border-bottom-style: solid;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url('../images/index-Background-Image.png');
-    opacity: 0.75;
+/*  */
+    
 }
 
 
@@ -45,17 +38,25 @@
     background-color: bisque;
 }
 
-.product{
-    background-color: rgb(128, 128, 128, 0.3);
-    transition: background-color 0.3s;
-}
+/*Products page CSS Start*/
 
+.product {
+    background-color: rgb(128, 128, 128, 0.3);
+    height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
 .product.selected {
-    border: 1px solid black;
+    border: 2px solid black;
 }
 
 .product:hover{
     transform: scale(1.1);
+    
     transition: transform 0.3 ease-out;
 }
 .TitlesRenew{
@@ -76,3 +77,56 @@
     border: 2px solid black;
     padding: 30px;
 }
+.prodCategory{
+    margin-bottom: 50px;
+}
+
+.prodPayment{
+    border-left: 2px solid black;
+}
+
+/*Process page CSS End*/
+
+/*Process page CSS Start*/
+
+.processcol {
+    background-color: rgba(134, 168, 133, 0.3);
+    margin: 5px;
+    font-size: larger;
+    padding: 30px;
+    text-align: justify;
+}
+
+.processimgstop {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+.processimgsbtm {
+    float:right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+}
+
+
+.processReference{
+    font-style: italic;
+    font-size: xx-small;
+}
+
+#processNav{
+    position: fixed;
+    top: 30%;
+    left: 35px;
+    border: 1px solid lightgray;
+    background-color: lightgray;
+    font-size: large;
+    padding: 15px;
+    text-decoration: none;
+    
+}
+
+/*Process page CSS End*/
