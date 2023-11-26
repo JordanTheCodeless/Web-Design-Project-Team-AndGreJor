@@ -69,7 +69,7 @@ function opt3(optn3){
 
 
 
-//Code understood with the aid of W3School:
+//Code understood with the aid of W3School (Note reviewed on class but necesary for code functionality):
 
 //This function selects a div from the categories and deselects every other 
 function selected(slc) {
@@ -96,6 +96,7 @@ function removeOne(){
     element1.classList.remove("selected");
     element2.classList.remove("selected");
     element3.classList.remove("selected");
+    //this targers the classes list and removes the "Selected" class from them when called
 }
 
 function removeTwo(){
