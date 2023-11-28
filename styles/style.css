@@ -34,7 +34,7 @@ color: #FFFDFA;
 /*Products page CSS Start*/
 
 .product {
-    background-color: rgb(211, 211, 211, 0.6);
+    background-color: rgb(0, 0, 0, 0.4);
     height: 500px;
     text-align: center;
     display: flex;
@@ -43,7 +43,18 @@ color: #FFFDFA;
     justify-content: center;
     margin: 5px;
     transition: transform 0.3s ease;
+    font-size: 20px;
+    color: #FFFDFA; 
 }
+
+@media (max-width: 1000px) {
+    /* Adjust for smaller screens */
+    .product {
+        width: 60%;
+        
+    }
+}
+
 .product.selected {
     border: 2px solid black;
 }
@@ -71,7 +82,8 @@ color: #FFFDFA;
 }
 .TitlesEle{
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
+    color: #FFFDFA;  
 }
 .hidden{
     display: none;
@@ -129,27 +141,6 @@ color: #FFFDFA;
 .processReference{
     font-style: italic;
     font-size: xx-small;
-}
-
-
-
-#processNav{
-    position: fixed;
-    top: 30%;
-    left: 35px;
-    background-color: rgba(134, 168, 133, 0.3);
-    font-size: larger;
-    padding: 15px;
-    text-decoration: none;
-}
-
-
-@media (max-width: 1000px) {
-    /* Hide for smaller screens */
-    #processNav{
-        display: none;
-        
-    }
 }
 
 /*Process page CSS End*/
