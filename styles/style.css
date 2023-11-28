@@ -79,6 +79,7 @@ color: #FFFDFA;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 .TitlesEle{
     cursor: pointer;
