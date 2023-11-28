@@ -34,7 +34,7 @@ color: #FFFDFA;
 /*Products page CSS Start*/
 
 .product {
-    background-color: rgb(128, 128, 128, 0.3);
+    background-color: rgb(211, 211, 211, 0.6);
     height: 500px;
     text-align: center;
     display: flex;
@@ -42,16 +42,27 @@ color: #FFFDFA;
     align-items: center;
     justify-content: center;
     margin: 5px;
+    transition: transform 0.3s ease;
 }
 .product.selected {
     border: 2px solid black;
 }
+/*Once added to the class list of the products, it will change its style and highlight the selected option.*/
+
+.h3store{
+    text-align: center;
+}
 
 .product:hover{
     transform: scale(1.1);
-    
-    transition: transform 0.3 ease-out;
 }
+/*When the mouse is over a an object with this class it will give the effect of popping out.*/
+
+#productsBottom{
+    background-color: rgb(211, 211, 211, 0.6);
+    height: 100%;
+}
+
 .TitlesRenew{
     display: flex;
     flex-wrap: wrap;
@@ -81,7 +92,15 @@ color: #FFFDFA;
     border-left: 2px solid black;
 }
 
-/*Process page CSS End*/
+@media (max-width: 1000px) {
+    /* Adjust for smaller screens */
+    .prodImg {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*Products page CSS End*/
 
 /*Process page CSS Start*/
 
@@ -113,16 +132,25 @@ color: #FFFDFA;
     font-size: xx-small;
 }
 
+
+
 #processNav{
     position: fixed;
     top: 30%;
     left: 35px;
-    border: 1px solid lightgray;
-    background-color: lightgray;
-    font-size: large;
+    background-color: rgba(134, 168, 133, 0.3);
+    font-size: larger;
     padding: 15px;
     text-decoration: none;
-    
+}
+
+
+@media (max-width: 1000px) {
+    /* Hide for smaller screens */
+    #processNav{
+        display: none;
+        
+    }
 }
 
 /*Process page CSS End*/

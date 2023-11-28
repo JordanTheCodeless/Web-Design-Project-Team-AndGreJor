@@ -9,7 +9,7 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
 </head>
-<body>
+<body> 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -46,19 +46,23 @@
     <hr>    
         <div class="container-fluid">
             <!--Used fluid containers to use the full width of the page-->
-            <div class="div2title">
-                <h2>Store</h2>
-                <!--Store introduction title-->
-            </div>
+            
             <br>
 
             <div class="row justify-content-center prodCategory">
+
+                <div class="col-md-7 col-sm-12">
+                    <h2>Store</h2>
+                    <p>We have a wide range of residential and industrial applications as well as capacitation seminars, check them out!</p>
+                    <br>
+                    <!--Store introduction title-->
+                </div>
             <!--Each row fits the elements of a category of products-->
-                <h3>Residential Solutions:</h3><br><br><br>
+                <h3 class="h3store">Residential Solutions:</h3><br><br><br>
                 <div class="col-md-3 col-sm-12 product one" onclick="opt1(1); sbttl(); selected(this);">
                     <!--Calling the functions opt, sbttl and selected linked in the JS page (This was done for each product, Further commenting in the store.js page explaining their functionality)-->
                     <h4>Solar Home Kit</h4>
-                    <img src="../images/ProductsHomePanel.jpg" alt="Pexels image of home solar panel">
+                    <img class="prodImg" src="../images/ProductsHomePanel.jpg" alt="Pexels image of home solar panel">
                     <p>Price: 3,000$</p>
                     <p>Compact solar panel system designed for residential rooftops.</p>
                 </div>
@@ -66,7 +70,7 @@
                 <div class="col-md-3 col-sm-12 product one" onclick="opt1(2); sbttl(); selected(this);">
                     <!--Product class used to format the 9 elements in all the categories-->
                     <h4>Energy Storage Bundle</h4>
-                    <img src="../images/ProductsEnergyStorage.jpg" alt="Pexels image of">
+                    <img class="prodImg" src="../images/ProductsEnergyStorage.jpg" alt="Pexels image of">
                     <p>Price: 400$</p>
                     <p>Home energy storage solution with a lithium-ion battery pack.</p>
                 </div>
@@ -74,7 +78,7 @@
                 <div class="col-md-3 col-sm-12 product one" onclick="opt1(3); sbttl(); selected(this);">
                     <!--The One, Two and Three classes were used to Unselect the element of the list in case it was not desired anymore-->
                     <h4>Smart Home Energy Management Package</h4>
-                    <img src="../images/ProductsSmartEcoHome.jpg" alt="Pexels image of smart device">
+                    <img class="prodImg" src="../images/ProductsSmartEcoHome.jpg" alt="Pexels image of smart device">
                     <p>Price: 1,500$</p>
                     <p>Comprehensive smart home energy management system.</p>
                 </div>
@@ -88,25 +92,25 @@
 
 
             <div class="row justify-content-center prodCategory">
-                <h3>Commercial/Industrial Solutions:</h3><br><br><br>
+                <h3 class="h3store">Commercial/Industrial Solutions:</h3><br><br><br>
 
                 <div class="col-md-3 col-sm-12 product two" onclick="opt2(1); sbttl(); selected(this);">
                     <h4>Large-scale Solar Farm Installation</h4>
-                    <img src="../images/ProductsIndustrialPanel.jpg" alt="Pexels image of multiple solar panels">
+                    <img class="prodImg" src="../images/ProductsIndustrialPanel.jpg" alt="Pexels image of multiple solar panels">
                     <p>Price: 5,000$</p>
                     <p>Customized solar solutions for businesses and industrial facilities.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-12 product two" onclick="opt2(2); sbttl(); selected(this);">
                     <h4>Singular Windmill installation</h4>
-                    <img src="../images/ProductsSingleWindmill.jpg" alt="Pexels image of Windmill">
+                    <img class="prodImg" src="../images/ProductsSingleWindmill.jpg" alt="Pexels image of Windmill">
                     <p>Price: 2,000$</p>
                     <p>Instalation of one Windmill generator.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-12 product two" onclick="opt2(3); sbttl(); selected(this);">
                     <h4>Multiple Windmill installation</h4>
-                    <img src="../images/ProductsMultyWindmill.jpg" alt="Pexels image of windmills">
+                    <img class="prodImg" src="../images/ProductsMultyWindmill.jpg" alt="Pexels image of windmills">
                     <p>Price: 13,000$</p>
                     <p>Instalation of multiple Windmill generators.</p>
                 </div>
@@ -120,25 +124,25 @@
 
 
             <div class="row justify-content-center prodCategory">
-                <h3>Sustainable Technology Services:</h3><br><br><br>
+                <h3 class="h3store">Sustainable Technology Services:</h3><br><br><br>
 
                 <div class="col-md-3 col-sm-12 product three" onclick="opt3(1); sbttl(); selected(this);">
                     <h4>Bespoke Renewable Energy Solutions</h4>
-                    <img src="../images/ProductEngTailoring.jpg" alt="Pexels image of Engineer">
+                    <img class="prodImg" src="../images/ProductEngTailoring.jpg" alt="Pexels image of Engineer">
                     <p>Price: 2,500$</p>
                     <p>Tailored renewable energy solutions for specific industries.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-12 product three" onclick="opt3(2); sbttl(); selected(this);">
                     <h4>Educational Workshops</h4>
-                    <img src="../images/ProductsCapacitation.jpg" alt="Pexels image of Teacher">
+                    <img class="prodImg" src="../images/ProductsCapacitation.jpg" alt="Pexels image of Teacher">
                     <p>Price: 500$</p>
                     <p>Informative workshops on renewable energy.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-12 product three" onclick="opt3(3); sbttl(); selected(this);">
                     <h4>Windmill manipulation capacitation</h4>
-                    <img src="../images/ProductsWindmillCapacitation.jpg" alt="Pexels image of Teacher in a room">
+                    <img class="prodImg" src="../images/ProductsWindmillCapacitation.jpg" alt="Pexels image of Teacher in a room">
                     <p>Price: 350$</p>
                     <p>Advanced Wind Turbine Control Systems</p>
                 </div>
@@ -147,15 +151,18 @@
 
 
 
-            <br><hr>
+            <hr>
 
 
 
-            <div class="row align-items-center">
+            <div class="row align-items-center" id="productsBottom">
+                
                 <div class="col">
                    <!--Div to display the total selected from each category.-->
                     
                     <span id="opt1tot">Option 1 is:</span> <input type="button" value="Remove" onclick="opt1(0); sbttl(); removeOne();"><br>
+                    <!--The inner Html of the opt1tot is changed in the store.js page-->
+                    <!--The remove option calls functions so it updates and deletes any selections from JS and CSS-->
                     <span id="opt2tot">Option 2 is:</span> <input type="button" value="Remove" onclick="opt2(0); sbttl(); removeTwo();"><br>
                     <span id="opt3tot">Option 3 is:</span> <input type="button" value="Remove" onclick="opt3(0); sbttl(); removeThree();"><br>
                     <span id="subtotal">Subtotal is: 0$</span><br>
@@ -165,6 +172,7 @@
                 </div>
                 <!--Fake payment form-->
                 <div class="col prodPayment">
+                    <br>
                     <form action="mailto:fakemail123@mail.mx?subject=FormSubmission" method="post" enctype="text/plain">
                         <table>
                             <tr>
@@ -211,7 +219,7 @@
                         <br>
                         <input type="submit" value="Submit payment">
                     </form>
-                    
+                    <br>
                 </div>
             </div>
             <hr>
