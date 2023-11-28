@@ -57,10 +57,11 @@ color: #FFFDFA;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding: 10px;
 }
 .TitlesEle{
     cursor: pointer;
-    text-decoration: underline;
+    color: #FFFDFA;  
 }
 .hidden{
     display: none;
