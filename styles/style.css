@@ -34,7 +34,7 @@ color: #FFFDFA;
 /*Products page CSS Start*/
 
 .product {
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: rgb(0, 0, 0);
     height: 500px;
     text-align: center;
     display: flex;
@@ -44,10 +44,11 @@ color: #FFFDFA;
     margin: 15px;
     transition: transform 0.3s ease;
     font-size: 20px;
+    border-radius: 15px;
     color: #FFFDFA; 
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
     /* Adjust for smaller screens */
     .product {
         width: 40%;
@@ -60,7 +61,6 @@ color: #FFFDFA;
     /* Adjust for smaller screens */
     .prodDesc {
         display: none;
-        
     }
 }
 
