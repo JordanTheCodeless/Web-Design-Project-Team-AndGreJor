@@ -20,6 +20,7 @@ body{
     margin: 0 auto;
     /* targeting all written elements within the container */
     color: #FFFDFA;
+    padding: 15px;
     }
  #indexDivsAbout{
      margin-top: 15px;
