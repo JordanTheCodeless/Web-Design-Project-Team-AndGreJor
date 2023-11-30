@@ -8,26 +8,40 @@ body{
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-
 }
+@media only screen and (max-width: 600px) {
+    body {background-color: black;
+        background-image: none;
+    }
+    .aboutUsPara{
+        font-size: 15px;
+    }
+    
+  }
 
   
 /* index.html CSS */
 
 #indexDivsImage {
-    /* text-align: center; */
-    background: hsl(0, 0%, 50%, 0.2);
+    background: hsl(0, 0%, 0%, 0.4);
+    align-items: center;
  }
  #indexDivsAbout{
-    background: hsl(0, 0%, 50%, 0.2);
+    
+    margin-top: 15px;
+   
+
  }
 .indexLogo{
     height: 100%;
     width:100%;
   }
   .aboutUsPara{
-    font-size: 20px;
-color: #FFFDFA;  
+    font-size: 25px;
+color: #FFFDFA;
+padding-bottom: 20px;
+  
+/* justify-content: center; */
 }
 
 
