@@ -3,9 +3,9 @@
 opt1(0);
 opt2(0);
 opt3(0);
-sbttl();
+subTotal();
 
-//Called the functions first so the value of each object was set to 0, enabling the use of the sbttl function without the need of selecting all of the options
+//Called the functions first so the value of each object was set to 0, enabling the use of the subTotal function without the need of selecting all of the options
 
 //Function called in category 1 to determine the price of the selected object
 function opt1(optn1){
@@ -123,7 +123,7 @@ function removeThree(){
 
 //Function called in category 3 to determine the price of the selected object
 
-function sbttl(){
+function subTotal(){
     var subtot = optn1value + optn2value + optn3value;
     document.getElementById("subtotal").innerHTML = "Subtotal is: " + subtot + "$";
     var taxF = subtot * .16;
