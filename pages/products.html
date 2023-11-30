@@ -8,11 +8,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/style.css">
+    <!-- Deferred bootstrap java -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- JS Deferred -->
+    <script defer src="../script/script.js"></script>
 </head>
 <body> 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
+        <div class="container">
             <a class="navbar-brand" href="./index.html">GigaEnergy</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -44,14 +50,14 @@
     </header>
 
     <hr>    
-        <div class="container-fluid">
+        <div class="container">
             <!--Used fluid containers to use the full width of the page-->
             
             <br>
 
             <div class="row justify-content-center prodCategory">
 
-                <div class="col-md-7 col-sm-12">
+                <div class="col-md-7 col-sm-12 ">
                     <h2>Store</h2>
                     <p>We have a wide range of residential and industrial applications as well as capacitation seminars, check them out!</p>
                     <br>
@@ -63,7 +69,7 @@
                     <!--Calling the functions opt, subTotal and selected linked in the JS page (This was done for each product, Further commenting in the store.js page explaining their functionality)-->
                     <h4>Solar Home Kit</h4>
                     <img class="prodImg" src="../images/SolarPanel.jpg" alt="Pexels image of home solar panel">
-                    <p>Price: 3,000$</p>
+                    <b>Price: 3,000$</b>
                     <p class="prodDesc">Compact solar panel system designed for residential rooftops.</p>
                 </div>
 
@@ -71,7 +77,7 @@
                     <!--Product class used to format the 9 elements in all the categories-->
                     <h4>Energy Storage Bundle</h4>
                     <img class="prodImg" src="../images/Batteries.jpg" alt="Pexels image of">
-                    <p>Price: 400$</p>
+                    <b>Price: 400$</b>
                     <p class="prodDesc">Home energy storage solution with a lithium-ion battery pack.</p>
                 </div>
 
@@ -79,13 +85,13 @@
                     <!--The One, Two and Three classes were used to Unselect the element of the list in case it was not desired anymore-->
                     <h4>Smart Home Energy Package</h4>
                     <img class="prodImg" src="../images/SmartHome.jpg" alt="Pexels image of smart device">
-                    <p>Price: 1,500$</p>
+                    <b>Price: 1,500$</b>
                     <p class="prodDesc">Comprehensive smart home energy management system.</p>
                 </div>
 
             </div>
 
-
+            
 
             <!--Next category of items-->
 
@@ -97,21 +103,21 @@
                 <div class="col-md-3 col-sm-12 product two" onclick="opt2(1); subTotal(); selected(this);">
                     <h4>Large-scale Solar Farm</h4>
                     <img class="prodImg" src="../images/SolarFarm.jpg" alt="Pexels image of multiple solar panels">
-                    <p>Price: 5,000$</p>
+                    <b>Price: 5,000$</b>
                     <p class="prodDesc">Customized solar solutions for businesses and industrial facilities.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-12 product two" onclick="opt2(2); subTotal(); selected(this);">
                     <h4>Singular Windmill installation</h4>
                     <img class="prodImg" src="../images/Windmill.jpg" alt="Pexels image of Windmill">
-                    <p>Price: 2,000$</p>
+                    <b>Price: 2,000$</b>
                     <p class="prodDesc">Instalation and setup one Windmill generator.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-12 product two" onclick="opt2(3); subTotal(); selected(this);">
                     <h4>Multiple Windmill installation</h4>
                     <img class="prodImg" src="../images/MultipleWindmills.jpg" alt="Pexels image of windmills">
-                    <p>Price: 13,000$</p>
+                    <b>Price: 13,000$</b>
                     <p class="prodDesc">Instalation and setup of multiple Windmill generators.</p>
                 </div>
 
@@ -129,21 +135,21 @@
                 <div class="col-md-3 col-sm-12 product three" onclick="opt3(1); subTotal(); selected(this);">
                     <h4>Bespoke Energy Solutions</h4>
                     <img class="prodImg" src="../images/Engineer.jpg" alt="Pexels image of Engineer">
-                    <p>Price: 2,500$</p>
+                    <b>Price: 2,500$</b>
                     <p class="prodDesc">Tailored renewable energy solutions for specific industries.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-12 product three" onclick="opt3(2); subTotal(); selected(this);">
                     <h4>Educational Workshops</h4>
                     <img class="prodImg" src="../images/Teacher1.jpg" alt="Pexels image of Teacher">
-                    <p>Price: 500$</p>
+                    <b>Price: 500$</b>
                     <p class="prodDesc">Informative workshops on renewable energy.</p>
                 </div>
 
                 <div class="col-md-3 col-sm-12 product three" onclick="opt3(3); subTotal(); selected(this);">
                     <h4>Windmill capacitation</h4>
                     <img class="prodImg" src="../images/Teacher2.jpg" alt="Pexels image of Teacher in a room">
-                    <p>Price: 350$</p>
+                    <b>Price: 350$</b>
                     <p class="prodDesc">Advanced Wind Turbine Control Systems capacitation.</p>
                 </div>
 
@@ -232,10 +238,6 @@
         </div>
     
 
-    <script src="../script/script.js"></script>
-    <!-- bootstrap java-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    
 </body>
 </html>
