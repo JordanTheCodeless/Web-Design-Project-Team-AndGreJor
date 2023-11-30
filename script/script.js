@@ -1,3 +1,5 @@
+//André
+
 opt1(0);
 opt2(0);
 opt3(0);
@@ -135,3 +137,12 @@ function sbttl(){
 
 //Function to modify and dinamically display the amount of money owed for each service
 
+
+//Greg
+function active(topChoice) {
+    var chosenTop = document.getElementById(topChoice);
+    var topText = chosenTop.innerHTML;
+    document.getElementById("activeTxt").innerHTML = topText
+}
+
+//Jordan
