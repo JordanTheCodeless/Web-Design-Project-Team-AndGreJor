@@ -21,7 +21,7 @@ body{
     /* targeting all written elements within the container */
     color: #FFFDFA;
     padding: 15px;
-    }
+}
  #indexDivsAbout{
      margin-top: 15px;
    }
@@ -47,6 +47,10 @@ padding: 25px 50px;
     padding:3px;
     margin-bottom: 10px;
 }}
+
+.nav-link{
+    color: #FFFDFA;
+}
 
 
 
