@@ -17,11 +17,9 @@ body{
     background: hsl(0, 0%, 0%, 0.4);
     align-items: center;
  }
-
  #indexDivsAbout{
-    margin-top: 15px;
- }
-
+     margin-top: 15px;
+   }
 .indexLogo{
     height: 100%;
     width:100%;
@@ -33,6 +31,9 @@ padding-bottom: 20px;
   
 /* justify-content: center; */
 }
+
+
+
 
 /*Products page CSS Start*/
 
@@ -188,7 +189,13 @@ table{
 .GameScreen {
     border: 2px solid black;
     text-align: center;
-    background-color: rgba(134, 168, 133, 0.3);
+    padding: 30px;
+    background-color: rgba(211, 211, 211, 0.6);
+    margin: 60px auto;
+    width: 70%;
+}
+#GameTxt {
+    color: white;
 }
 /*Game CSS End*/
 
