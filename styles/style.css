@@ -13,6 +13,11 @@ body{
     body {background-color: black;
         background-image: none;
     }
+    .navbar{
+        background-color: black;
+        
+        }
+       
     .aboutUsPara{
         font-size: 15px;
     }
