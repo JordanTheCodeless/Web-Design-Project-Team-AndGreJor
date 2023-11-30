@@ -149,3 +149,8 @@ color: #FFFDFA;
 }
 
 /*Process page CSS End*/
+.GameScreen {
+    border: 2px solid black;
+    text-align: center;
+    background-color: rgba(134, 168, 133, 0.3);
+}
