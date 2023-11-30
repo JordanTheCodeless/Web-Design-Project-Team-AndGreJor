@@ -28,8 +28,28 @@ body{
     font-size: 25px;
 color: #FFFDFA;
 padding-bottom: 20px;
+<<<<<<< HEAD
   
 /* justify-content: center; */
+=======
+}
+#contact{
+    color: #FFFDFA;
+    background-color:hsl(0, 0%, 0%, 0.4);
+}
+.contactInfo{
+    
+    border: 2px solid #FFFDFA;
+    padding: 3px;
+    text-align: center;
+    margin: auto;
+}
+ .contactInfo td,tr, th{
+    border:2px solid #FFFDFA ;
+    padding:3px;
+    color: #ba7c1f;
+
+>>>>>>> fbf9d2f567b2c09858b45da281eacbbc238f5e54
 }
 
 
