@@ -99,30 +99,6 @@ padding-bottom: 20px;
     height: 100%;
 }
 
-.TitlesRenew{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px;
-}
-.TitlesEle{
-    cursor: pointer;
-    text-decoration: none;
-    color: #FFFDFA;
-}
-
-.hidden{
-    display: none;
-}
-
-#activeTxt{
-    text-align: center;
-    padding: 30px;
-    background-color: rgba(134, 168, 133, 0.3);
-    margin: 60px auto;
-    width: 70%;
-}
 .prodCategory{
     margin-bottom: 50px;
 }
@@ -166,8 +142,40 @@ padding-bottom: 20px;
 }
 
 /*Process page CSS End*/
+
+/*Renew CSS Start*/
+
+.TitlesRenew{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+.TitlesEle{
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFFDFA;
+}
+
+.hidden{
+    display: none;
+}
+
+#activeTxt{
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(134, 168, 133, 0.3);
+    margin: 60px auto;
+    width: 70%;
+}
+
+/*Renew CSS End*/
+
+/*Game CSS Start*/
 .GameScreen {
     border: 2px solid black;
     text-align: center;
     background-color: rgba(134, 168, 133, 0.3);
 }
+/*Game CSS End*/
