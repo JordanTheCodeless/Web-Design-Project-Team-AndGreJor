@@ -28,7 +28,22 @@ body{
     font-size: 25px;
 color: #FFFDFA;
 padding-bottom: 20px;
-  
+}
+#contact{
+    color: #FFFDFA;
+    background-color:hsl(0, 0%, 0%, 0.4);
+}
+.contactInfo{
+    
+    border: 2px solid #FFFDFA;
+    padding: 3px;
+    text-align: center;
+    margin: auto;
+}
+ .contactInfo td,tr, th{
+    border:2px solid #FFFDFA ;
+    padding:3px;
+    color:#FFFDFA;
 
 }
 
