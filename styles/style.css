@@ -50,6 +50,14 @@ color: #FFFDFA;
 @media (max-width: 1000px) {
     /* Adjust for smaller screens */
     .product {
+        width: 60%; 
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    /* Adjust for smaller screens */
+    .product {
         width: 60%;
         
     }
@@ -84,11 +92,13 @@ color: #FFFDFA;
 .TitlesEle{
     cursor: pointer;
     text-decoration: none;
-    color: #FFFDFA;  
+    color: #FFFDFA;
 }
+
 .hidden{
     display: none;
 }
+
 #activeTxt{
     text-align: center;
     padding: 30px;
