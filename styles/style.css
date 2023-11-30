@@ -1,11 +1,13 @@
 /* This is for all HTML pages ! */
 body{
+    /* Background Image Properties */
     background-image: url('../images/background-image.jpg');
     background-image: 100vh 100vw fit-content;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    text-align: center;
 
 }
 
@@ -13,7 +15,7 @@ body{
 /* index.html CSS */
 
 #indexDivsImage {
-    text-align: center;
+    /* text-align: center; */
     background: hsl(0, 0%, 50%, 0.2);
  }
  #indexDivsAbout{
