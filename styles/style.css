@@ -13,10 +13,14 @@ body{
 
 /* index.html CSS */
 
-#indexDivsImage {
+#mainDivsContainer {
     background: hsl(0, 0%, 0%, 0.4);
-    align-items: center;
- }
+    text-align: center;
+
+    margin: 0 auto;
+    /* targeting all written elements within the container */
+    color: #FFFDFA;
+    }
  #indexDivsAbout{
      margin-top: 15px;
    }
@@ -24,28 +28,25 @@ body{
     height: 100%;
     width:100%;
   }
-  .aboutUsPara{
-    font-size: 25px;
-color: #FFFDFA;
-padding-bottom: 20px;
+  .aboutUsPara ,#newsLetter{
+font-size: 25px;
+padding: 25px 50px;
 }
-#contact{
-    color: #FFFDFA;
-    background-color:hsl(0, 0%, 0%, 0.4);
-}
+
 .contactInfo{
     
     border: 2px solid #FFFDFA;
     padding: 3px;
-    text-align: center;
     margin: auto;
 }
- .contactInfo td,tr, th{
+/* Here I targeted all table elements within Contact table */
+ .contactInfo {
+    td,tr, th{
     border:2px solid #FFFDFA ;
     padding:3px;
-    color:#FFFDFA;
+    margin-bottom: 10px;
+}}
 
-}
 
 
 
@@ -206,7 +207,8 @@ table{
     text-align: center;
     padding: 30px;
     background-color: rgba(211, 211, 211, 0.6);
-    margin: 60px auto;
+    margin:  auto;
+   
     width: 70%;
 }
 #GameTxt {
@@ -218,7 +220,8 @@ table{
     body {background-color: lightgreen;
         background-image: none;
     }
-    .aboutUsPara{
+    
+    .aboutUsPara, #newsLetter{
         font-size: 15px;
     }
     .product {
