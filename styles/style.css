@@ -24,6 +24,7 @@ body {
 }
 
 .indexLogo {
+    /* I put height and width 100 so it will shrink with container. */
     height: 100%;
     width: 100%;
 }
@@ -59,9 +60,13 @@ body {
 
 /* Newsletter Form */
 #newsLetterContainer{
+    /* I used Display flex and flex wrap to re-align the content when screen gets smaller */
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
+
 /* #userNewsLetter {
     margin: auto;
 } */
@@ -258,8 +263,17 @@ table {
 }
 
 /*Game CSS End*/
+@media only screen and (max-width:  800px){
+    #newsLetterContainer{
+        justify-content: center;
+    }
 
-@media only screen and (max-width: 600px) {
+}
+
+
+
+
+@media only screen and (max-width: 666px) {
     body {
         background-color: lightgreen;
         background-image: none;
@@ -274,7 +288,11 @@ table {
         width: 40%;
         height: 300px;
     }
+    #newsLetterContainer{
+        justify-content: center;
+    }
 }
+
 
 .whiteText {
     color: #FFFDFA;
