@@ -164,7 +164,7 @@ body {
 /*When the mouse is over a an object with this class it will give the effect of popping out.*/
 
 #productsBottom {
-    background-color: rgb(0, 0, 0, 0.5);
+    
     height: 100%;
     color: #FFFDFA;
     font-size: large;
