@@ -78,6 +78,7 @@ function opt3(optn3){
 function selected(slc) {
     //Get the parent category div
     var category = slc.closest(".row");
+    //I figured out how to call the parent functions with code provided by w3hSchool
 
     //Deselect all objects in the same category
     var objectsInCategory = category.querySelectorAll(".product");
