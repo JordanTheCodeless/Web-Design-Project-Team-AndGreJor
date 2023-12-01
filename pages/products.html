@@ -164,9 +164,8 @@
 
             <div class="row align-items-center" id="productsBottom">
                 
-                <div class="col">
+                <div class="col-md-12 col-sm-12 col-lg-6">
                    <!--Div to display the total selected from each category.-->
-                    
                     <span id="opt1tot">Option 1 is:</span> <input type="button" value="Remove" onclick="opt1(0); subTotal(); removeOne();"><br>
                     <!--The inner Html of the opt1tot is changed in the store.js page-->
                     <!--The remove option calls functions so it updates and deletes any selections from JS and CSS-->
@@ -178,7 +177,7 @@
                     
                 </div>
                 <!--Fake payment form-->
-                <div class="col prodPayment">
+                <div class="col-md-12 col-sm-12 col-lg-6 prodPayment">
                     <br>
                     <form action="mailto:fakemail123@mail.mx?subject=FormSubmission" method="post" enctype="text/plain">
                         <table>
@@ -218,9 +217,15 @@
                                 <td>Expiry date:</td>
                                 <td><input type="text" name="expdate" placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/\d{2}$" title="expiry date" required></td>
                                 <!-- pattern for MM/YY -->
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
                                 <td>CVV:</td>
                                 <td><input type="text" name="cvv" pattern="[0-9]{3}" title="CVV" required></td>
                                 <!-- Can only accept 3 digits -->
+                                <td></td>
+                                <td></td>
                             </tr>
                         </table>
                         <br>

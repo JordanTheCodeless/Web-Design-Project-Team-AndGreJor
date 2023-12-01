@@ -21,9 +21,10 @@ body {
     /* targeting all written elements within the container */
     color: #FFFDFA;
     padding: 15px;
-}
+    }
 
 .indexLogo {
+    /* I put height and width 100 so it will shrink with container. */
     height: 100%;
     width: 100%;
 }
@@ -59,9 +60,13 @@ body {
 
 /* Newsletter Form */
 #newsLetterContainer{
+    /* I used Display flex and flex wrap to re-align the content when screen gets smaller */
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
 }
+
 /* #userNewsLetter {
     margin: auto;
 } */
@@ -79,6 +84,12 @@ body {
 }
 
 
+ .contactInfo {
+    td,tr, th{
+    border:2px solid #FFFDFA ;
+    padding:3px;
+    margin-bottom: 10px;
+}}
 
 
 
@@ -186,12 +197,13 @@ table {
 /*Process page CSS Start*/
 
 .processcol {
-    background-color: rgba(0, 0, 0, 0.6);
-    margin: 5px;
-    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 10px;
+    font-size: large;
     color: #FFFDFA;
     padding: 30px;
     text-align: justify;
+    border-radius: 25px;
 }
 
 .processimgstop {
@@ -262,8 +274,17 @@ table {
 }
 
 /*Game CSS End*/
+@media only screen and (max-width:  800px){
+    #newsLetterContainer{
+        justify-content: center;
+    }
 
-@media only screen and (max-width: 600px) {
+}
+
+
+
+
+@media only screen and (max-width: 666px) {
     body {
         background-color: lightgreen;
         background-image: none;
@@ -278,7 +299,11 @@ table {
         width: 40%;
         height: 300px;
     }
+    #newsLetterContainer{
+        justify-content: center;
+    }
 }
+
 
 .whiteText {
     color: #FFFDFA;
