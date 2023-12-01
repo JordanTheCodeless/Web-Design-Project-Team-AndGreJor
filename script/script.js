@@ -4,6 +4,7 @@ opt1(0);
 opt2(0);
 opt3(0);
 subTotal();
+test();
 
 //Called the functions first so the value of each object was set to 0, enabling the use of the subTotal function without the need of selecting all of the options
 
@@ -144,5 +145,22 @@ function active(topChoice) {
     var topText = chosenTop.innerHTML;
     document.getElementById("activeTxt").innerHTML = topText
 }
+
+const TreesArray = [];
+
+function TreeArray() {
+    var tree = Math.floor(Math.random() * 7);
+    document.getElementById("GameTxt").innerHTML = "game" + tree + "tree";
+    document.getElementById("Game").innerHTML = "hello world";  
+}
+
+TreeArray();
+
+function test() {
+    document.getElementById("testPara").innerHTML = "algo";
+}
+
+
+
 
 //Jordan
