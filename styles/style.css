@@ -1,5 +1,5 @@
 /* This is for all HTML pages ! */
-body{
+body {
     /* Background Image Properties */
     background-image: url('../images/background-image.jpg');
     background-image: 100vh 100vw fit-content;
@@ -13,7 +13,7 @@ body{
 
 /* index.html CSS */
 
-#mainDivsContainer {
+#mainDivsContainer  {
     background: hsl(0, 0%, 0%, 0.4);
     text-align: center;
 
@@ -22,35 +22,63 @@ body{
     color: #FFFDFA;
     padding: 15px;
 }
- #indexDivsAbout{
-     margin-top: 15px;
-   }
-.indexLogo{
+
+.indexLogo {
     height: 100%;
-    width:100%;
-  }
-  .aboutUsPara ,#newsLetter{
-font-size: 25px;
-padding: 25px 50px;
+    width: 100%;
 }
 
-.contactInfo{
-    
+.aboutUsPara,
+#newsLetter {
+    font-size: 25px;
+    padding: 25px 50px;
+}
+
+.contactInfo {
+
     border: 2px solid #FFFDFA;
     padding: 3px;
     margin: auto;
 }
-/* Here I targeted all table elements within Contact table */
- .contactInfo {
-    td,tr, th{
-    border:2px solid #FFFDFA ;
-    padding:3px;
-    margin-bottom: 10px;
-}}
 
-.nav-link{
+/* Here I targeted all table elements within Contact table */
+.contactInfo {
+
+    td,
+    tr,
+    th {
+        border: 2px solid #FFFDFA;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+}
+
+.nav-link {
     color: #FFFDFA;
 }
+
+/* Newsletter Form */
+#newsLetterContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+/* #userNewsLetter {
+    margin: auto;
+} */
+
+#userForm {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #FFFDFA;
+    color: black;
+    width: 320px;
+   align-self: flex-end;
+}
+#userForm input {
+    border-radius: 4px;
+}
+
+
 
 
 
@@ -70,20 +98,23 @@ padding: 25px 50px;
     transition: transform 0.3s ease;
     font-size: 20px;
     border-radius: 15px;
-    color: #FFFDFA; 
+    color: #FFFDFA;
 }
 
 @media (max-width: 1250px) {
+
     /* Adjust for smaller screens */
     .product {
         width: 40%;
         height: 350px;
-        
+
     }
+
     .processimgsbtm {
         width: 150px;
         height: 150px;
     }
+
     .processimgstop {
         width: 150px;
         height: 150px;
@@ -91,6 +122,7 @@ padding: 25px 50px;
 }
 
 @media (max-width: 1100px) {
+
     /* Adjust for smaller screens */
     .prodDesc {
         display: none;
@@ -107,34 +139,37 @@ padding: 25px 50px;
 .product.selected {
     border: 4px solid white;
 }
+
 /*Once added to the class list of the products, it will change its style and highlight the selected option.*/
 
-.h3store{
+.h3store {
     text-align: center;
 }
 
-.product:hover{
+.product:hover {
     transform: scale(1.1);
 }
+
 /*When the mouse is over a an object with this class it will give the effect of popping out.*/
 
-#productsBottom{
+#productsBottom {
     background-color: rgb(0, 0, 0, 0.5);
     height: 100%;
     color: #FFFDFA;
     font-size: large;
-    
+
 }
 
-.prodCategory{
+.prodCategory {
     margin-bottom: 50px;
 }
 
-.prodPayment{
+.prodPayment {
     border-left: 2px solid black;
 }
 
 @media (max-width: 1250px) {
+
     /* Adjust for smaller screens */
     .prodImg {
         width: 150px;
@@ -142,7 +177,7 @@ padding: 25px 50px;
     }
 }
 
-table{
+table {
     text-align: justify;
 }
 
@@ -167,7 +202,7 @@ table{
 }
 
 .processimgsbtm {
-    float:right;
+    float: right;
     margin-left: 20px;
     margin-bottom: 20px;
     border: 3px solid black;
@@ -179,24 +214,25 @@ table{
 
 /*Renew CSS Start*/
 
-.TitlesRenew{
+.TitlesRenew {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
 }
-.TitlesEle{
+
+.TitlesEle {
     cursor: pointer;
     text-decoration: none;
     color: #FFFDFA;
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-#activeTxt{
+#activeTxt {
     text-align: center;
     padding: 30px;
     background-color: rgba(134, 168, 133, 0.3);
@@ -212,29 +248,34 @@ table{
     text-align: center;
     padding: 30px;
     background-color: rgba(211, 211, 211, 0.6);
-    margin:  auto;
-   
+    margin: auto;
+
     width: 70%;
 }
+
 #GameTxt {
     color: white;
 }
+
 /*Game CSS End*/
 
 @media only screen and (max-width: 600px) {
-    body {background-color: lightgreen;
+    body {
+        background-color: lightgreen;
         background-image: none;
     }
-    
-    .aboutUsPara, #newsLetter{
+
+    .aboutUsPara,
+    #newsLetter {
         font-size: 15px;
     }
+
     .product {
         width: 40%;
         height: 300px;
     }
-  }
+}
 
-  .whiteText{
+.whiteText {
     color: #FFFDFA;
-  }
+}
