@@ -1,66 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- Stylesheet -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <title>Interact</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-            <a class="navbar-brand" href="./index.html">GigaEnergy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-    
-               
-                <li class="nav-item ">
-                    <a class="nav-link" href="./renewable.html">Renewable</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="./products.html">Products</a>
-                  </li>
-                    <li class="nav-item">
-                  <a class="nav-link" href="./interact.html">Interact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./process.html">Process</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-              </div>
-            </div>
-          </nav>
-    
-    </header>
 
-    <hr>
-    <div class="GameScreen">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Interact</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">GigaEnergy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+
+
+            <li class="nav-item ">
+              <a class="nav-link" href="./renewable.html">Renewable</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./interact.html">Interact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./process.html">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <hr>
+  <div class="container">
+    <div id="mainDivsContainer">
+  <div class="GameScreen">
     <h3>Welcome to the game!</h3>
     <br><br>
 
     <div><p>Game window</p></div><br>
 
     <img src="../images/Windmill.jpg" alt="Game screen"><br><br>
+    <div>
+      <p>Game window</p>
+    </div>
+    <br>
+    <img src="../images/ProductsSingleWindmill.jpg" alt="Game screen"><br><br>
     <h7 id="GameTxt">Here is where game output texts will display</h7><br><br>
 
     <input type="text"> <input type="submit" value="Submit">
-
     </div>
+ <div id="contact">
+        <h3>Contact Information</h3>
+        <table class="contactInfo">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td>Jordan</td>
+                <td>x22113100@student.ncirl.ie</td>
+            </tr>
+            <tr>
+                <td>Andre</td>
+                <td>x23164034@student.ncirl.ie</td>
+            </tr>
+            <tr>
+                <td>Greg</td>
+                <td>x23521803@student.ncirl.ie</td>
+            </tr>
+        </table>
+    </div>
+</footer>
+    </div>
+</div>
 
-     <!-- bootstrap java don't delete -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-     crossorigin="anonymous"></script>
+  <!-- bootstrap java don't delete -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
