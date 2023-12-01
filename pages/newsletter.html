@@ -1,54 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- Stylesheet -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <title>Newsletter
-    </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Newsletter
+  </title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-            <a class="navbar-brand" href="./index.html">GigaEnergy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-    
-               
-                <li class="nav-item ">
-                    <a class="nav-link" href="./renewable.html">Renewable</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="./products.html">Products</a>
-                  </li>
-                    <li class="nav-item">
-                  <a class="nav-link" href="./interact.html">Interact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./process.html">Process</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-              </div>
-            </div>
-          </nav>
-    
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="./index.html">GigaEnergy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
 
 
-     <!-- bootstrap java don't delete -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-     crossorigin="anonymous"></script>
+            <li class="nav-item ">
+              <a class="nav-link" href="./renewable.html">Renewable</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./interact.html">Interact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./process.html">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <div class="container">
+    <div id="mainDivsContainer">
+    <main>
+    
+    
+      <!-- This newsletter container I use display flex to change the position on the main-axis -->
+      <div id="newsLetterContainer">
+      <!-- This will change after javascript -->
+      <p id="greetingMessage">Looks like you came to the right place. <br> This will be the best decision you ever made !</p>
+
+      <!-- The userForm is targeted in the css -->
+        <div id="userForm">
+          <form action="#" method="GET">
+            <table id="userNewsTable">
+              <tr>
+                <td>
+                  <label for="">Name:</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" placeholder="John">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="">Surname:</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" placeholder="Doe">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="">E-mail:</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="email" placeholder="user2023@gmail.com">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="">Confirm your E-mail:</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="email" placeholder="user2023@gmail.com">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="">Password:</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="password" placeholder="password">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="">Confirm your Password:</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="password" placeholder="Confirm your password">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" required>
+                  <label for="">I agree to the Terms and Conditions</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" required>
+                  <label for="">Subscribe to Newsletter</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+              <button id="Submitgit ">Submit</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+    </div>
+  </div>
+  <!-- bootstrap java don't delete -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
