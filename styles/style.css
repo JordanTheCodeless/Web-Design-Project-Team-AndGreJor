@@ -130,6 +130,7 @@ body {
         width: 150px;
         height: 150px;
     }
+    
 }
 
 @media (max-width: 1100px) {
@@ -175,9 +176,7 @@ body {
     margin-bottom: 50px;
 }
 
-.prodPayment {
-    border-left: 2px solid black;
-}
+
 
 @media (max-width: 1250px) {
 
@@ -296,8 +295,8 @@ table {
     }
 
     .product {
-        width: 40%;
-        height: 300px;
+        width: 41%;
+        height: 320px;
     }
     #newsLetterContainer{
         justify-content: center;

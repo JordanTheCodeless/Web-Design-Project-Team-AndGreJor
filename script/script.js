@@ -4,7 +4,7 @@ opt1(0);
 opt2(0);
 opt3(0);
 subTotal();
-test();
+
 
 //Called the functions first so the value of each object was set to 0, enabling the use of the subTotal function without the need of selecting all of the options
 
@@ -157,9 +157,6 @@ function TreeArray() {
 
 TreeArray();
 
-function test() {
-    document.getElementById("testPara").innerHTML = "algo";
-}
 
 
 
