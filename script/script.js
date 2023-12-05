@@ -5,7 +5,6 @@ opt2(0);
 opt3(0);
 subTotal();
 
-
 //Called the functions first so the value of each object was set to 0, enabling the use of the subTotal function without the need of selecting all of the options
 
 //Function called in category 1 to determine the price of the selected object
@@ -78,7 +77,6 @@ function opt3(optn3){
 function selected(slc) {
     //Get the parent category div
     var category = slc.closest(".row");
-    //I figured out how to call the parent functions with code provided by w3hSchool
 
     //Deselect all objects in the same category
     var objectsInCategory = category.querySelectorAll(".product");
