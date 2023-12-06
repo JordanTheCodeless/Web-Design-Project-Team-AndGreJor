@@ -82,7 +82,21 @@ body {
 #userForm input {
     border-radius: 4px;
 }
-
+#messageAndBtn{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    
+}
+#hiddenBtn{
+    width: 50%;
+    display: none;
+    
+}
+#greetingMessage{
+    font-size: 30px;
+}
 
  .contactInfo {
     td,tr, th{
