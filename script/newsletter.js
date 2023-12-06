@@ -46,7 +46,7 @@
      alert("Please enter a valid email.");
      resetField("userEmail");
 
-
+// If users emails are not the same
    }
    else if (userEmail !== userEmail2) {
      alert("Emails do not match.");
@@ -54,6 +54,7 @@
      resetField("userEmail2");
 
    }
+//    Here I will alert the user if their password doesnt have 8 letters a special character or a number
    else if (password.length < 8 || (!/[!@£$%^&*{}:.,?|<>]/.test(password)) || (!/\d/.test(password))) {
 
      alert("Your password must contain at least 8 characters, one special character and a number to ensure safety");
@@ -61,19 +62,20 @@
      ;
 
    }
-   else if (password !== confirmPassword) {
+   else if  (confirmPassword !== password) {
      alert("Passwords do not match");
      resetField("password");
      resetField("confirmPassword");
 
    }
+//    Here the user must check the terms and conditions.
    else if (!termsConditions.checked) {
      alert("You need to agree to the terms and conditions");
 
 
    }
    else {
-     // here I call the disappear function that I will manipulate the DOM
+     // here I call the disappear function that will manipulate the DOM
      disappear();
      finalMessage();
      
@@ -90,6 +92,7 @@
        document.getElementById("greetingMessage").innerHTML= ("Congratulations " + firstName + " you have succesfully signed up we will contact you shortly at " + userEmail + " for verification");
 
    }
+//    JQuery redirecting the user back to index.html
  $("#hiddenBtn").show();
  $("#hiddenBtn").click(function () {
   window.location = "index.html"
