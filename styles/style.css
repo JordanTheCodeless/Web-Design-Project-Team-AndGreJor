@@ -147,6 +147,11 @@ body {
         height: 150px;
     }
     
+    .prodImg {
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 @media (max-width: 1100px) {
@@ -170,7 +175,7 @@ body {
 
 /*Once added to the class list of the products, it will change its style and highlight the selected option.*/
 
-.h3store {
+.h3store { 
     text-align: center;
 }
 
@@ -194,14 +199,7 @@ body {
 
 
 
-@media (max-width: 1250px) {
 
-    /* Adjust for smaller screens */
-    .prodImg {
-        width: 150px;
-        height: 150px;
-    }
-}
 
 table {
     text-align: justify;
