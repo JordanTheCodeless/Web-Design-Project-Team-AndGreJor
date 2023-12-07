@@ -28,7 +28,9 @@ body {
     height: 100%;
     width: 100%;
 }
-
+.aboutUsPara{
+    font-size: 25px;
+}
 
 #newsLetter {
     font-size: 25px;
@@ -65,24 +67,38 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     
+    
 }
 
-/* #userNewsLetter {
-    margin: auto;
-} */
 
+/*Styling for user form  */
 #userForm {
     padding: 15px;
     border-radius: 10px;
     background-color: #FFFDFA;
     color: black;
     width: 320px;
-   align-self: flex-end;
+   /* align-self: flex-end; */
 }
 #userForm input {
     border-radius: 4px;
 }
-
+#messageAndBtn{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  
+    /* flex-wrap: wrap-reverse; */
+    
+}
+#hiddenBtn{
+    width: 50%;
+    display: none;
+    
+}
+#greetingMessage{
+    font-size: 30px;
+}
 
  .contactInfo {
     td,tr, th{
@@ -131,6 +147,11 @@ body {
         height: 150px;
     }
     
+    .prodImg {
+        width: 150px;
+        height: 150px;
+    }
+
 }
 
 @media (max-width: 1100px) {
@@ -154,7 +175,7 @@ body {
 
 /*Once added to the class list of the products, it will change its style and highlight the selected option.*/
 
-.h3store {
+.h3store { 
     text-align: center;
 }
 
@@ -178,14 +199,7 @@ body {
 
 
 
-@media (max-width: 1250px) {
 
-    /* Adjust for smaller screens */
-    .prodImg {
-        width: 150px;
-        height: 150px;
-    }
-}
 
 table {
     text-align: justify;
@@ -273,9 +287,20 @@ table {
 }
 
 /*Game CSS End*/
+
+@media only screen and (max-width:  1000px){
+    .aboutUsPara,
+    #newsLetter , #greetingMessage {
+        font-size: 20px;
+    
+    }
+
+}
+
 @media only screen and (max-width:  800px){
     #newsLetterContainer{
         justify-content: center;
+    
     }
 
 }
@@ -290,8 +315,8 @@ table {
     }
 
     .aboutUsPara,
-    #newsLetter {
-        font-size: 15px;
+    #newsLetter , #greetingMessage {
+        font-size: 17px;
     }
 
     .product {
@@ -300,6 +325,7 @@ table {
     }
     #newsLetterContainer{
         justify-content: center;
+        /* flex-direction: column; */
     }
 }
 

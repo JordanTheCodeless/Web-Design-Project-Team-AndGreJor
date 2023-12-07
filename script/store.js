@@ -136,13 +136,3 @@ function subTotal(){
 }
 
 //Function to modify and dinamically display the amount of money owed for each service
-
-
-//Greg
-
-
-
-
-
-
-//Jordan
