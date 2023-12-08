@@ -58,8 +58,8 @@
 
             <div class="row justify-content-center prodCategory">
 
-                <div class="col-md-7 col-sm-12 ">
-                    <h2>Store</h2>
+                <div class="col-md-7 col-sm-12">
+                    <br><h2>Store</h2>
                     <p>We have a wide range of residential and industrial applications as well as capacitation seminars, check them out!</p>
                     <br>
                     <!--Store introduction title-->
@@ -162,10 +162,11 @@
 
 
 
-            <div class="row align-items-center" id="productsBottom">
+            <div class="row justify-content-center" id="productsBottom">
                 
-                <div class="col-md-12 col-sm-12 col-lg-6">
+                <div class="col-md-12 col-sm-12 col-lg-6 paymentFormOne">
                    <!--Div to display the total selected from each category.-->
+                   <div class="optionDisplay">
                     <span id="opt1tot">Option 1 is:</span> <input type="button" value="Remove" onclick="opt1(0); subTotal(); removeOne();"><br>
                     <!--The inner Html of the opt1tot is changed in the store.js page-->
                     <!--The remove option calls functions so it updates and deletes any selections from JS and CSS-->
@@ -174,10 +175,10 @@
                     <span id="subtotal">Subtotal is: 0$</span><br>
                     <span id="tax">Tax is: 0$</span><br>
                     <span id="totaInfo">Total is: 0$</span>
-                    
+                </div>
                 </div>
                 <!--Fake payment form-->
-                <div class="col-md-12 col-sm-12 col-lg-6">
+                <div class="col-md-12 col-sm-12 col-lg-6 paymentFormTwo">
                     <br>
                     <form action="mailto:fakemail123@mail.mx?subject=FormSubmission" method="post" enctype="text/plain">
                         <table>
