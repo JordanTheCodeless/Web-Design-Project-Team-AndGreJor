@@ -92,30 +92,26 @@
 
             </div>
 
-            
-
             <!--Next category of items-->
-
-
 
             <div class="row justify-content-center prodCategory">
                 <h3 class="h3store">Commercial/Industrial Solutions:</h3><br><br><br>
 
-                <div class="col-md-3 col-sm-12 product two" onclick="opt2(1); subTotal(); selected(this);">
+                <div class="col-3 product two" onclick="opt2(1); subTotal(); selected(this);">
                     <h4>Large-scale Solar Farm</h4>
                     <img class="prodImg" src="../images/SolarFarm.jpg" alt="Pexels image of multiple solar panels">
                     <b>Price: 5,000$</b>
                     <p class="prodDesc">Customized solar solutions for businesses.</p>
                 </div>
 
-                <div class="col-md-3 col-sm-12 product two" onclick="opt2(2); subTotal(); selected(this);">
+                <div class="col-3 product two" onclick="opt2(2); subTotal(); selected(this);">
                     <h4>Singular Windmill installation</h4>
                     <img class="prodImg" src="../images/Windmill.jpg" alt="Pexels image of Windmill">
                     <b>Price: 2,000$</b>
                     <p class="prodDesc">Instalation and setup one Windmill generator.</p>
                 </div>
 
-                <div class="col-md-3 col-sm-12 product two" onclick="opt2(3); subTotal(); selected(this);">
+                <div class="col-3 product two" onclick="opt2(3); subTotal(); selected(this);">
                     <h4>Multiple Windmill installation</h4>
                     <img class="prodImg" src="../images/MultipleWindmills.jpg" alt="Pexels image of windmills">
                     <b>Price: 13,000$</b>
@@ -124,30 +120,26 @@
 
             </div>
 
-
-
             <!--Next category of items-->
-
-
 
             <div class="row justify-content-center prodCategory">
                 <h3 class="h3store">Sustainable Technology Services:</h3><br><br><br>
 
-                <div class="col-md-3 col-sm-12 product three" onclick="opt3(1); subTotal(); selected(this);">
+                <div class="col-3 product three" onclick="opt3(1); subTotal(); selected(this);">
                     <h4>Bespoke Energy Solutions</h4>
                     <img class="prodImg" src="../images/Engineer.jpg" alt="Pexels image of Engineer">
                     <b>Price: 2,500$</b>
                     <p class="prodDesc">Tailored renewable energy solutions for specific industries.</p>
                 </div>
 
-                <div class="col-md-3 col-sm-12 product three" onclick="opt3(2); subTotal(); selected(this);">
+                <div class="col-3 product three" onclick="opt3(2); subTotal(); selected(this);">
                     <h4>Educational Workshops</h4>
                     <img class="prodImg" src="../images/Teacher1.jpg" alt="Pexels image of Teacher">
                     <b>Price: 500$</b>
                     <p class="prodDesc">Informative workshops on renewable energy.</p>
                 </div>
 
-                <div class="col-md-3 col-sm-12 product three" onclick="opt3(3); subTotal(); selected(this);">
+                <div class="col-3 product three" onclick="opt3(3); subTotal(); selected(this);">
                     <h4>Windmill capacitation</h4>
                     <img class="prodImg" src="../images/Teacher2.jpg" alt="Pexels image of Teacher in a room">
                     <b>Price: 350$</b>
@@ -156,15 +148,11 @@
 
             </div>
 
-
-
             <hr>
-
-
 
             <div class="row justify-content-center" id="productsBottom">
                 
-                <div class="col-md-12 col-sm-12 col-lg-6 paymentFormOne">
+                <div class="col-6 paymentFormOne">
                    <!--Div to display the total selected from each category.-->
                    <div class="optionDisplay">
                     <span id="opt1tot">Option 1 is:</span> <input type="button" value="Remove" onclick="opt1(0); subTotal(); removeOne();"><br>
@@ -178,9 +166,10 @@
                 </div>
                 </div>
                 <!--Fake payment form-->
-                <div class="col-md-12 col-sm-12 col-lg-6 paymentFormTwo">
+                <div class="col-6 paymentFormTwo">
                     <br>
                     <form action="mailto:fakemail123@mail.mx?subject=FormSubmission" method="post" enctype="text/plain">
+                        <!--Used the "mailto" action in order to prevent any accidental info to be shared.-->
                         <table>
                             <tr>
                                 <td>Amount to pay:</td>
@@ -237,10 +226,6 @@
             </div>
             <hr>
 
-            
-
-            
-
             <footer>
                 <div id="newsLetter">
                     <h4>Our Newsletter</h4>
@@ -268,8 +253,5 @@
             </footer> 
             </div>
         </div>
-    
-
-    
 </body>
 </html>
