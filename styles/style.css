@@ -186,28 +186,25 @@ table {
 /*Process page CSS Start*/
 
 .processcol {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.3);
     margin: 10px;
-    font-size: large;
+    font-size: larger;
     color: #FFFDFA;
-    padding: 30px;
-    text-align: justify;
-    border-radius: 25px;
+    padding: 25px;
+    text-align:left;
+    border-radius: 10px;
 }
 
-.processimgstop {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    border: 3px solid black;
+.processimg {
+    border-radius: 10px;
+    display: block;
+    margin: auto; 
+    margin-bottom: 25px;
+    margin-top: 25px;
+    height: 230px;
+    width: 330px;
 }
 
-.processimgsbtm {
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    border: 3px solid black;
-}
 
 /*Process page CSS End*/
 
@@ -276,13 +273,8 @@ table {
 @media only screen and (max-width:  800px){
     #newsLetterContainer{
         justify-content: center;
-    
     }
-
 }
-
-
-
 
 @media only screen and (max-width: 666px) {
     body {
@@ -313,16 +305,6 @@ table {
         height: 350px;
 
     }
-
-    .processimgsbtm {
-        width: 150px;
-        height: 150px;
-    }
-
-    .processimgstop {
-        width: 150px;
-        height: 150px;
-    }
     
     .prodImg {
         width: 150px;
@@ -331,6 +313,14 @@ table {
 
 }
 
+@media (max-width: 1450px) {
+
+    /* Adjust for smaller screens */
+    .processimg {
+        height: 100px;
+        width: 150px;
+    }
+}
 
 .whiteText {
     color: #FFFDFA;
