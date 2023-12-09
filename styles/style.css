@@ -36,29 +36,6 @@ body {
     padding: 25px 50px;
 }
 
-/* .contactInfo {
-
-    border: 2px solid #FFFDFA;
-    padding: 3px;
-    margin: auto;
-} */
-
-/* Here I targeted all table elements within Contact table */
-/* .contactInfo {
-
-    td,
-    tr,
-    th {
-        border: 2px solid #FFFDFA;
-        padding: 3px;
-        margin-bottom: 10px;
-    }
-} 
-
-WE MIGHT NOT NEED THIS ANYMORE
-
-*/
-
 .nav-link {
     color: #FFFDFA;
 }
