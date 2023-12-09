@@ -15,10 +15,29 @@ body {
     font-size: 20px;
 
 }
+#newsletterLink{
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: black;
+    margin:4px;
+    font-size: 15px;
+    color: white;
+}
+#newsletterLink:hover{
+    background-color: #FFFDFA;
+    color: black;
+    border: black 2px solid ;
+}
 
 .mobile-version{
     display:none;
 }
+
+    
+    
+
 
 .navbar-brand-mobile {
     display: none;
@@ -29,7 +48,7 @@ body {
 #mainDivsContainer {
     background: hsl(0, 0%, 0%, 0.4);
     text-align: center;
-
+    font-family: 'Barlow', sans-serif; ;
     margin: 0 auto;
     /* targeting all written elements within the container */
     color: #FFFDFA;
@@ -333,6 +352,10 @@ table {
         padding: 0px 12px;
         font-size: 20px;
     
+    }
+    a.nav-link{
+       font-size: 10px;
+      
     }
 
 
