@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +18,6 @@
     <script defer src="../script/store.js"></script>
     <title>StorePage</title>
 </head>
-
 <body>
     <header>
         <!-- NavBar template from Bootstrap  -->
@@ -57,17 +55,13 @@
                 </div>
             </div>
         </nav>
-
     </header>
     <!-- <hr>     -->
     <div class="container">
         <!--Used fluid containers to use the full width of the page-->
-
         <br>
         <div id="mainDivsContainer">
-
             <div class="row justify-content-center prodCategory">
-
                 <div class="col-md-7 col-sm-12">
                     <br>
                     <h2>Store</h2>
@@ -85,7 +79,6 @@
                     <b>Price: 3,000$</b>
                     <p class="prodDesc">Compact solar panel system designed for residential rooftops.</p>
                 </div>
-
                 <div class="col-3 product one" onclick="opt1(2); subTotal(); selected(this);">
                     <!--Product class used to format the 9 elements in all the categories-->
                     <h4>Energy Storage Bundle</h4>
@@ -93,7 +86,6 @@
                     <b>Price: 400$</b>
                     <p class="prodDesc">Home energy storage solution with a lithium-ion battery pack.</p>
                 </div>
-
                 <div class="col-3 product one" onclick="opt1(3); subTotal(); selected(this);">
                     <!--The One, Two and Three classes were used to Unselect the element of the list in case it was not desired anymore-->
                     <h4>Smart Home Energy Package</h4>
@@ -101,69 +93,53 @@
                     <b>Price: 1,500$</b>
                     <p class="prodDesc">Comprehensive smart home energy management system.</p>
                 </div>
-
             </div>
-
             <!--Next category of items-->
-
             <div class="row justify-content-center prodCategory">
                 <h3 class="h3store">Commercial/Industrial Solutions:</h3><br><br><br>
-
                 <div class="col-3 product two" onclick="opt2(1); subTotal(); selected(this);">
                     <h4>Large-scale Solar Farm</h4>
                     <img class="prodImg" src="../images/SolarFarm.jpg" alt="Pexels image of multiple solar panels">
                     <b>Price: 5,000$</b>
                     <p class="prodDesc">Customized solar solutions for businesses.</p>
                 </div>
-
                 <div class="col-3 product two" onclick="opt2(2); subTotal(); selected(this);">
                     <h4>Singular Windmill installation</h4>
                     <img class="prodImg" src="../images/Windmill.jpg" alt="Pexels image of Windmill">
                     <b>Price: 2,000$</b>
                     <p class="prodDesc">Instalation and setup one Windmill generator.</p>
                 </div>
-
                 <div class="col-3 product two" onclick="opt2(3); subTotal(); selected(this);">
                     <h4>Multiple Windmill installation</h4>
                     <img class="prodImg" src="../images/MultipleWindmills.jpg" alt="Pexels image of windmills">
                     <b>Price: 13,000$</b>
                     <p class="prodDesc">Instalation and setup of multiple Windmill generators.</p>
                 </div>
-
             </div>
-
             <!--Next category of items-->
-
             <div class="row justify-content-center prodCategory">
                 <h3 class="h3store">Sustainable Technology Services:</h3><br><br><br>
-
                 <div class="col-3 product three" onclick="opt3(1); subTotal(); selected(this);">
                     <h4>Bespoke Energy Solutions</h4>
                     <img class="prodImg" src="../images/Engineer.jpg" alt="Pexels image of Engineer">
                     <b>Price: 2,500$</b>
                     <p class="prodDesc">Tailored renewable energy solutions for specific industries.</p>
                 </div>
-
                 <div class="col-3 product three" onclick="opt3(2); subTotal(); selected(this);">
                     <h4>Educational Workshops</h4>
                     <img class="prodImg" src="../images/Teacher1.jpg" alt="Pexels image of Teacher">
                     <b>Price: 500$</b>
                     <p class="prodDesc">Informative workshops on renewable energy.</p>
                 </div>
-
                 <div class="col-3 product three" onclick="opt3(3); subTotal(); selected(this);">
                     <h4>Windmill capacitation</h4>
                     <img class="prodImg" src="../images/Teacher2.jpg" alt="Pexels image of Teacher in a room">
                     <b>Price: 350$</b>
                     <p class="prodDesc">Advanced Wind Turbine Control Systems capacitation.</p>
                 </div>
-
             </div>
-
             <hr>
-
             <div class="row justify-content-center" id="productsBottom">
-
                 <div class="col-6 paymentFormOne">
                     <!--Div to display the total selected from each category.-->
                     <div class="optionDisplay">
@@ -196,7 +172,6 @@
                                 <td colspan="2">Payment details</td>
                                 <td></td>
                                 <td></td>
-
                             </tr>
                             <tr>
                                 <td>Email:</td>
@@ -242,12 +217,11 @@
                 </div>
             </div>
             <hr>
-
             <footer>
                 <div id="newsLetter">
                     <h4>Our Newsletter</h4>
                     <p>If you would like to be informed of cost-saving solutions and stories related to sustainability
-                        from all corners of the globe you can click 
+                        from all corners of the globe you can click
                         <a id="newsletterLink"
                             href="./newsletter.html">This Link !</a>
                     </p>
@@ -274,5 +248,4 @@
         </div>
     </div>
 </body>
-
 </html>
