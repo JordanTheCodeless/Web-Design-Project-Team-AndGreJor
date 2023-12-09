@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
  var form = document.getElementById('registration');
  // This is the div that contains the users Form we will reassign it to a variable
  var formDisappear = document.getElementById("userForm");
-//  this function is used for all fields to be reset upon refresh
+//  This function is used for all fields to be reset upon refresh
  resetAllFields(form);
 // Here I made the function as above 
  function resetAllFields(form){
@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
      alert("Your password must contain at least 8 characters, one special character and a number to ensure safety");
      resetField("password");
+     resetField("confirmPassword");
      ;
 
    }
