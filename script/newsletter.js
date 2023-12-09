@@ -1,7 +1,14 @@
- //  Assigning the form to a variable 
+document.addEventListener('DOMContentLoaded', function() {
+//  Assigning the form to a variable 
  var form = document.getElementById('registration');
  // This is the div that contains the users Form we will reassign it to a variable
  var formDisappear = document.getElementById("userForm");
+//  this function is used for all fields to be reset upon refresh
+ resetAllFields(form);
+// Here I made the function as above 
+ function resetAllFields(form){
+  form.reset();
+}
  // This will prevent the default actions that come with submitting a form 
  form.addEventListener('submit', function (event) {
    event.preventDefault();
@@ -82,7 +89,7 @@
     
 
      }
-     // function that prints final message to user regarding their succesful sign up
+     // function that prints final message to user regarding their succesful sign up and clicking newsletter checkbox
    function finalMessage(){
      if(newsCheck.checked){
      document.getElementById("greetingMessage").innerHTML= ("Congratulations " + firstName + " you have succesfully signed up and opted to receive e-mails regarding our NewsLetter we will contact you shortly at " + userEmail + " for verification");
@@ -108,4 +115,5 @@
    function resetField(fieldName) {
      document.getElementById(fieldName).value = ('');
    }
- }
+   
+ }})

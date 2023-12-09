@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- Stylesheet -->
-    <link rel="stylesheet" href="../styles/style.css">
-    <title>Sustainability</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-            <a class="navbar-brand" href="./index.html">GigaEnergy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-    
-               
-                <li class="nav-item ">
-                    <a class="nav-link" href="./renewable.html">Renewable</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="./products.html">Products</a>
-                  </li>
-                    <li class="nav-item">
-                  <a class="nav-link" href="./interact.html">Interact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./process.html">Process</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
-              </div>
-            </div>
-          </nav>
-    
-    </header>
 
-    </div>
-    <hr>
-    <div id="mainDivsContainer">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Sustainability</title>
+</head>
+
+<body>
+  <header>
+    <!-- NavBar template from Bootstrap  -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- container to keep  -->
+      <div class="container">
+        <div id="navbar-brand">
+          <a class="navbar-brand" href="index.html">GigaEnergy</a>
+          <a class="navbar-brand-mobile" href="index.html"><img src="../images/mobile-logo.png" alt="Mobile logo"></a>
+        </div>
+        <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="./renewable.html">Renewable</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./interact.html">Interact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./process.html">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+  <div id="mainDivsContainer">
     <div class="TitlesRenew">
-        <div class="TitlesEle" onclick="active('TopicEne')"><h4>Energy Comsumption</h4></div>
-        <div class="TitlesEle" onclick="active('TopicWas')"><h4>Waste Reduction</h4></div>
-        <div class="TitlesEle" onclick="active('TopicWat')"><h4>Water Conservation</h4></div>
-        <div class="TitlesEle" onclick="active('TopicTran')"><h4>Transportation</h4></div>
-        <div class="TitlesEle" onclick="active('TopicFood')"><h4>Food Choices</h4></div>
-        <div class="TitlesEle" onclick="active('TopicEdu')"><h4>Education and Advocacy</h4></div>
+      <div class="TitlesEle" onclick="active('TopicEne')">
+        <h4>Energy Comsumption</h4>
+      </div>
+      <div class="TitlesEle" onclick="active('TopicWas')">
+        <h4>Waste Reduction</h4>
+      </div>
+      <div class="TitlesEle" onclick="active('TopicWat')">
+        <h4>Water Conservation</h4>
+      </div>
+      <div class="TitlesEle" onclick="active('TopicTran')">
+        <h4>Transportation</h4>
+      </div>
+      <div class="TitlesEle" onclick="active('TopicFood')">
+        <h4>Food Choices</h4>
+      </div>
+      <div class="TitlesEle" onclick="active('TopicEdu')">
+        <h4>Education and Advocacy</h4>
+      </div>
     </div>
 
     <div id="activeTxt">select a topic</div>
@@ -69,36 +86,38 @@
   <div id="mainDivsContainer">
     <footer>
       <div id="newsLetter">
-          <h4>Our Newsletter</h4>
-          <p>If you would like to be informed of cost-saving solutions and stories related to sustainability from all corners of the globe you can click <span><a id="newsletterLink" href="./newsletter.html">here.</a></span></p>
+        <h4>Our Newsletter</h4>
+        <p>If you would like to be informed of cost-saving solutions and stories related to sustainability
+            from all corners of the globe you can click 
+            <a id="newsletterLink"
+                href="./newsletter.html">This Link !</a>
+        </p>
+      <hr>
+      <div id="contact">
+        <h3>Contact Information</h3><br>
+        <div class="row justify-content-center">
+          <div class="col">
+            <h4>Jordan</h4>
+            <p>x22113100@student.ncirl.ie</p>
+          </div>
+          <div class="col">
+            <h4>André</h4>
+            <p>x23164034@student.ncirl.ie</p>
+          </div>
+          <div class="col">
+            <h4>Greg</h4>
+            <p>x23521803@student.ncirl.ie</p>
+          </div>
+        </div>
+        <br><br>
       </div>
-   <div id="contact">
-          <h3>Contact Information</h3>
-          <table class="contactInfo">
-              <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-              </tr>
-              <tr>
-                  <td>Jordan</td>
-                  <td>x22113100@student.ncirl.ie</td>
-              </tr>
-              <tr>
-                  <td>Andre</td>
-                  <td>x23164034@student.ncirl.ie</td>
-              </tr>
-              <tr>
-                  <td>Greg</td>
-                  <td>x23521803@student.ncirl.ie</td>
-              </tr>
-          </table>
-      </div>
-  </footer>
-</div>
-     <!-- bootstrap java don't delete -->
-     <script src="../script/renewable.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-     crossorigin="anonymous"></script>
+    </footer>
+  </div>
+  <!-- bootstrap java don't delete -->
+  <script src="../script/renewable.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
