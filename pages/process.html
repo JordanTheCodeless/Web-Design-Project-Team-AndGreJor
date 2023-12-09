@@ -1,194 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <!-- Stylesheet -->
-    <link rel="stylesheet" href="../styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <!-- Bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles/style.css">
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-     crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 
-    <title>Process</title>
+  <title>Process</title>
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-            <a class="navbar-brand" href="./index.html">GigaEnergy</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-    
-               
-                <li class="nav-item ">
-                    <a class="nav-link" href="./renewable.html">Renewable</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link" href="./products.html">Products</a>
-                  </li>
-                    <li class="nav-item">
-                  <a class="nav-link" href="./interact.html">Interact</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./process.html">Process</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
-              </ul>
+  <header>
+    <!-- NavBar template from Bootstrap  -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <!-- container to keep  -->
+      <div class="container">
+        <div id="navbar-brand">
+          <a class="navbar-brand" href="index.html">GigaEnergy</a>
+          <a class="navbar-brand-mobile" href="index.html"><img src="../images/mobile-logo.png" alt="Mobile logo"></a>
+        </div>
+        <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="./renewable.html">Renewable</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="./products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./interact.html">Interact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./process.html">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <!--Small NavBar for the process page, to navigate throught the different types of renewable energies-->
+
+  <div class="container-fluid">
+    <div id="mainDivsContainer">
+      <hr>
+      <div class="TitlesRenew">
+        <a class="TitlesEle" href="#solar">Solar energy</a><br>
+        <a class="TitlesEle" href="#wind">Wind energy</a><br>
+        <a class="TitlesEle" href="#goethermal">Geothermal energy</a><br>
+        <a class="TitlesEle" href="#hydropower">Hydropower energy</a><br>
+        <a class="TitlesEle" href="#ocean">Ocean energy</a><br>
+        <a class="TitlesEle" href="#bioenergy">Bioenergy</a><br>
+      </div>
+      <hr>
+      <br>
+      <!--Fluid container so the page uses the entire extent of the web page-->
+      <div class="row justify-content-center">
+
+        <!--Only needed one row since the colums have a width of 5 spaces, so only 2 can fit in a single row, which is the desired behaviour-->
+
+        <div class="col-md-9 col-sm-12">
+          <br>
+          <h2>Process</h2>
+          <p>
+            Explore the transformative world of renewable energy—solar, wind, geothermal, hydropower, ocean, and
+            bioenergy. These technologies offer cleaner, greener solutions for a sustainable future. Join us in
+            uncovering their unique strengths and contributions to mitigating climate change. Welcome to the forefront
+            of renewable energy.
+          </p>
+          <br>
+          <!--Store introduction title-->
+        </div>
+
+        <!--Each COL div is in charge of displaying a certain topic in an organized manner-->
+
+        <div class="col-md-3 col-sm-5 processcol">
+          <!--Bootstrap columns-->
+
+          <img id="solar" class="processimg" src="../images/ProcessSolarEnergy.jpg" alt="Pixaby Photo of a solar panel">
+          <h3>Solar energy</h3><br>
+          <p>
+            Solar energy stands out as the most abundant among all renewable resources. Its harnessing capabilities are
+            not limited to sunny days; even in cloudy weather, solar technologies can deliver heat, cooling, natural
+            lighting, electricity, and fuels.
+          </p>
+
+          <!-- ChatGPT Generated Info.-->
+
+        </div>
+
+        <div class="col-md-3 col-sm-5 processcol">
+          <img id="wind" class="processimg" src="../images/ProcessWindPower.jpg" alt="Pixaby Photo of Wind energy">
+
+          <h3 id="wind">Wind Energy</h3><br>
+
+          <p>
+            Wind energy, a vital component of the renewable energy landscape, harnesses the kinetic energy of moving air
+            masses. Wind turbines convert this energy into electricity, providing a clean and sustainable power source.
+          </p>
+
+
+          <!-- ChatGPT Generated Info.-->
+
+        </div>
+
+        <div class="col-md-3 col-sm-5 processcol">
+          <img class="processimg" src="../images/ProcessGeoPOwer.jpg" alt="Pixaby Photo of GeoThermal energy">
+
+          <h3 id="goethermal">Geothermal Energy</h3><br>
+
+          <p>
+            Geothermal energy taps into the Earth's internal heat, providing a reliable and sustainable source of power.
+            This renewable resource is harnessed by extracting heat from the Earth's crust for various applications.
+          </p>
+
+          <!-- ChatGPT Generated Info.-->
+
+        </div>
+
+        <div class="col-md-3 col-sm-5 processcol">
+          <img id="hydropower" class="processimg" src="../images/ProcessHydroPower.jpg" alt="Pixaby Photo of Hydropower">
+
+          <h3 >Hydropower</h3><br>
+
+          <p>
+            Hydropower, derived from the energy of flowing water, is a crucial component of the renewable energy
+            portfolio. It involves harnessing the kinetic and potential energy of rivers and other water bodies to
+            generate electricity.
+          </p>
+
+          <!-- ChatGPT Generated Info.-->
+
+        </div>
+
+
+        <div class="col-md-3 col-sm-5 processcol">
+
+          <img id="ocean" class="processimg" src="../images/ProcessWaveEnergy.jpg" alt="Pixaby Photo of waves">
+
+          <h3 id="ocean">Ocean energy</h3><br>
+
+          <p>
+            Ocean energy encompasses various technologies that harness the power of the ocean's waves, tides, and
+            thermal gradients. These renewable resources offer a vast and largely untapped potential for generating
+            electricity.
+          </p>
+
+          <!-- ChatGPT Generated Info.-->
+
+        </div>
+
+        <div class="col-md-3 col-sm-5 processcol">
+
+          <img id="bioenergy" class="processimg" src="../images/ProcessBioEnergy.jpg" alt="Pixaby Photo of Bioenergy">
+
+          <h3 id="bioenergy">Bioenergy</h3><br>
+
+          <p>
+            Bioenergy harnesses the energy stored in organic materials, such as plants and biomass, for various
+            applications, including heat, electricity, and biofuels. Biomass can be burned directly for heat or
+            converted into biofuels like ethanol and biodiesel.
+          </p>
+
+          <!-- ChatGPT Generated Info.-->
+
+        </div>
+        <br><br>
+        <hr>
+        <footer>
+          <div id="newsLetter">
+            <h4>Our Newsletter</h4>
+            <p>If you would like to be informed of cost-saving solutions and stories related to sustainability
+                from all corners of the globe you can click 
+                <a id="newsletterLink"
+                    href="./newsletter.html">This Link !</a>
+            </p>
+          <hr>
+          <div id="contact">
+            <h3>Contact Information</h3><br>
+            <div class="row justify-content-center">
+              <div class="col">
+                <h4>Jordan</h4>
+                <p>x22113100@student.ncirl.ie</p>
+              </div>
+              <div class="col">
+                <h4>André</h4>
+                <p>x23164034@student.ncirl.ie</p>
+              </div>
+              <div class="col">
+                <h4>Greg</h4>
+                <p>x23521803@student.ncirl.ie</p>
               </div>
             </div>
-          </nav>
-    
-    </header>
-    
-<!--Small NavBar for the process page, to navigate throught the different types of renewable energies-->
-
-    <div class="container-fluid">
-        <div id="mainDivsContainer">
-        <hr>
-        <div class="TitlesRenew">
-            <a class="TitlesEle" href="#solar">Solar energy</a><br>
-            <a class="TitlesEle" href="#wind">Wind energy</a><br>
-            <a class="TitlesEle" href="#goethermal">Geothermal energy</a><br>
-            <a class="TitlesEle" href="#hydropower">Hydropower energy</a><br>
-            <a class="TitlesEle" href="#ocean">Ocean energy</a><br>
-            <a class="TitlesEle" href="#bioenergy">Bioenergy</a><br>
-        </div><hr>
-        <br>
-        <!--Fluid container so the page uses the entire extent of the web page-->
-        <div class="row justify-content-center">
-        
-            <!--Only needed one row since the colums have a width of 5 spaces, so only 2 can fit in a single row, which is the desired behaviour-->
-            
-            <div class="col-md-9 col-sm-12">
-                <br>
-                <h2>Process</h2>
-                <p>
-                    Explore the transformative world of renewable energy—solar, wind, geothermal, hydropower, ocean, and bioenergy. These technologies offer cleaner, greener solutions for a sustainable future. Join us in uncovering their unique strengths and contributions to mitigating climate change. Welcome to the forefront of renewable energy.
-                </p>
-                <br>
-                <!--Store introduction title-->
-            </div>
-
-            <!--Each COL div is in charge of displaying a certain topic in an organized manner-->
-
-            <div class="col-md-3 col-sm-5 processcol">
-                <!--Bootstrap columns-->
-
-                <img id="solar" class="processimg" src="../images/ProcessSolarEnergy.jpg" alt="Pixaby Photo of a solar panel">
-                <h3>Solar energy</h3><br>
-                <p>
-                    Solar energy stands out as the most abundant among all renewable resources. Its harnessing capabilities are not limited to sunny days; even in cloudy weather, solar technologies can deliver heat, cooling, natural lighting, electricity, and fuels.
-                </p>
-
-                <!-- ChatGPT Generated Info.-->
-
-            </div>
-
-            <div class="col-md-3 col-sm-5 processcol">
-                <img id="wind" class="processimg" src="../images/ProcessWindPower.jpg" alt="Pixaby Photo of Wind energy">
-
-                <h3 >Wind Energy</h3><br>
-                
-                <p>
-                    Wind energy, a vital component of the renewable energy landscape, harnesses the kinetic energy of moving air masses. Wind turbines convert this energy into electricity, providing a clean and sustainable power source.
-                </p>
-                
-                
-                    <!-- ChatGPT Generated Info.-->
-                
-            </div>
-        
-            <div class="col-md-3 col-sm-5 processcol">
-                <img id="goethermal" class="processimg" src="../images/ProcessGeoPOwer.jpg" alt="Pixaby Photo of GeoThermal energy">
-
-                <h3 >Geothermal Energy</h3><br>
-
-                <p>
-                    Geothermal energy taps into the Earth's internal heat, providing a reliable and sustainable source of power. This renewable resource is harnessed by extracting heat from the Earth's crust for various applications.
-                </p>
-
-                <!-- ChatGPT Generated Info.-->
-
-            </div>
-
-            <div class="col-md-3 col-sm-5 processcol">
-                <img id="hydropower" class="processimg" src="../images/ProcessHydroPower.jpg" alt="Pixaby Photo of Hydropower">
-
-                <h3 >Hydropower</h3><br>
-
-                <p>
-                    Hydropower, derived from the energy of flowing water, is a crucial component of the renewable energy portfolio. It involves harnessing the kinetic and potential energy of rivers and other water bodies to generate electricity. 
-                </p>
-
-                    <!-- ChatGPT Generated Info.-->
-                
-            </div>
-        
-        
-            <div class="col-md-3 col-sm-5 processcol">
-
-                <img id="ocean" class="processimg" src="../images/ProcessWaveEnergy.jpg" alt="Pixaby Photo of waves">
-
-                <h3 >Ocean energy</h3><br>
-
-                <p>
-                    Ocean energy encompasses various technologies that harness the power of the ocean's waves, tides, and thermal gradients. These renewable resources offer a vast and largely untapped potential for generating electricity.
-                </p>
-
-                    <!-- ChatGPT Generated Info.-->
-                
-            </div>
-            
-            <div class="col-md-3 col-sm-5 processcol">
-
-                <img id="bioenergy" class="processimg" src="../images/ProcessBioEnergy.jpg" alt="Pixaby Photo of Bioenergy">
-
-                <h3 >Bioenergy</h3><br>
-
-                <p>
-                    Bioenergy harnesses the energy stored in organic materials, such as plants and biomass, for various applications, including heat, electricity, and biofuels. Biomass can be burned directly for heat or converted into biofuels like ethanol and biodiesel.
-                </p>
-                
-                    <!-- ChatGPT Generated Info.-->
-                
-            </div>
-            <br><br><hr>
-            <footer>
-                <div id="newsLetter">
-                    <h4>Our Newsletter</h4>
-                    <p>If you would like to be informed of cost-saving solutions and stories related to sustainability from all corners of the globe you can click <span><a id="newsletterLink" href="./newsletter.html">here.</a></span></p>
-                </div><hr>
-             <div id="contact">
-                <h3>Contact Information</h3><br>
-                    <div class="row justify-content-center">
-                      <div class="col">
-                        <h4>Jordan</h4>
-                        <p>x22113100@student.ncirl.ie</p>
-                      </div>
-                      <div class="col">
-                        <h4>André</h4>
-                        <p>x23164034@student.ncirl.ie</p>
-                      </div>
-                      <div class="col">
-                        <h4>Greg</h4>
-                        <p>x23521803@student.ncirl.ie</p>
-                      </div>
-                    </div>
-                    <br><br>    
-                </div>
-            </footer>
-        </div>
-        </div>
-     </div>
+            <br><br>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

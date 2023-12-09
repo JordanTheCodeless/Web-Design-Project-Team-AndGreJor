@@ -10,24 +10,58 @@ body {
     text-align: center;
 }
 
+#navbar-brand {
+    padding: 10px;
+    font-size: 20px;
+
+}
+#newsletterLink{
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: black;
+    margin:4px;
+    font-size: 15px;
+    color: white;
+}
+#newsletterLink:hover{
+    background-color: #FFFDFA;
+    color: black;
+    border: black 2px solid ;
+}
+
+.mobile-version{
+    display:none;
+}
+
+    
+    
+
+
+.navbar-brand-mobile {
+    display: none;
+}
+
 /* index.html CSS */
 
-#mainDivsContainer  {
+#mainDivsContainer {
     background: hsl(0, 0%, 0%, 0.4);
     text-align: center;
-
+    font-family: 'Barlow', sans-serif; ;
     margin: 0 auto;
     /* targeting all written elements within the container */
     color: #FFFDFA;
     padding: 15px;
-    }
+}
 
 .indexLogo {
     /* I put height and width 100 so it will shrink with container. */
     height: 100%;
     width: 100%;
 }
-.aboutUsPara{
+
+.aboutUsPara {
     font-size: 25px;
 }
 
@@ -36,18 +70,20 @@ body {
     padding: 25px 50px;
 }
 
+
+
 .nav-link {
     color: #FFFDFA;
 }
 
 /* Newsletter Form */
-#newsLetterContainer{
+#newsLetterContainer {
     /* I used Display flex and flex wrap to re-align the content when screen gets smaller */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-    
+
+
 }
 
 
@@ -58,34 +94,42 @@ body {
     background-color: #FFFDFA;
     color: black;
     width: 320px;
-   /* align-self: flex-end; */
+    /* align-self: flex-end; */
 }
+
 #userForm input {
     border-radius: 4px;
 }
-#messageAndBtn{
-    display:flex;
+
+#messageAndBtn {
+    display: flex;
     flex-direction: column;
     align-items: center;
-  
+
     /* flex-wrap: wrap-reverse; */
-    
+
 }
-#hiddenBtn{
+
+#hiddenBtn {
     width: 50%;
     display: none;
-    
+
 }
-#greetingMessage{
+
+#greetingMessage {
     font-size: 30px;
 }
 
- .contactInfo {
-    td,tr, th{
-    border:2px solid #FFFDFA ;
-    padding:3px;
-    margin-bottom: 10px;
-}}
+.contactInfo {
+
+    td,
+    tr,
+    th {
+        border: 2px solid #FFFDFA;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+}
 
 /*Products page CSS Start*/
 
@@ -116,7 +160,8 @@ body {
 }
 
 .optionDisplay {
-    text-align: center; /* Center text content */
+    text-align: center;
+    /* Center text content */
 }
 
 .paymentFormTwo {
@@ -143,7 +188,7 @@ body {
 
 /*Once added to the class list of the products, it will change its style and highlight the selected option.*/
 
-.h3store { 
+.h3store {
     text-align: center;
 }
 
@@ -154,7 +199,7 @@ body {
 /*When the mouse is over a an object with this class it will give the effect of popping out.*/
 
 #productsBottom {
-    
+
     height: 100%;
     color: #FFFDFA;
     font-size: large;
@@ -179,14 +224,14 @@ table {
     font-size: larger;
     color: #FFFDFA;
     padding: 25px;
-    text-align:left;
+    text-align: left;
     border-radius: 10px;
 }
 
 .processimg {
     border-radius: 10px;
     display: block;
-    margin: auto; 
+    margin: auto;
     margin-bottom: 25px;
     margin-top: 25px;
     height: 230px;
@@ -249,17 +294,19 @@ table {
 
 /*Site responsiveness*/
 
-@media only screen and (max-width:  1000px){
+@media only screen and (max-width: 1000px) {
+
     .aboutUsPara,
-    #newsLetter , #greetingMessage {
+    #newsLetter,
+    #greetingMessage {
         font-size: 20px;
-    
+
     }
 
 }
 
-@media only screen and (max-width:  800px){
-    #newsLetterContainer{
+@media only screen and (max-width: 800px) {
+    #newsLetterContainer {
         justify-content: center;
     }
 }
@@ -268,10 +315,17 @@ table {
     body {
         background-color: rgb(26, 103, 26);
         background-image: none;
+
     }
 
+     .mobile-version{
+     background-color: rgb(26, 103, 26);
+     display:block;
+     }
+
     .aboutUsPara,
-    #newsLetter , #greetingMessage {
+    #newsLetter,
+    #greetingMessage {
         font-size: 17px;
     }
 
@@ -279,11 +333,31 @@ table {
         width: 41%;
         height: 320px;
     }
-    #newsLetterContainer{
+
+    #newsLetterContainer {
         justify-content: center;
         /* flex-direction: column; */
     }
-}
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .navbar-brand-mobile {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #navbar-brand {
+        padding: 0px 12px;
+        font-size: 20px;
+    
+    }
+    a.nav-link{
+       font-size: 10px;
+      
+    }
+
 
 @media (max-width: 1250px) {
 
@@ -293,7 +367,7 @@ table {
         height: 350px;
 
     }
-    
+
     .prodImg {
         width: 150px;
         height: 150px;
@@ -320,4 +394,4 @@ table {
     .prodDesc {
         display: none;
     }
-}
+}}
