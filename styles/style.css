@@ -172,8 +172,8 @@ table {
     margin: auto;
     margin-bottom: 25px;
     margin-top: 25px;
-    height: 230px;
-    width: 330px;
+    height: 35%;
+    width: 85%;
 }
 /*Process page CSS End*/
 /*Renew CSS Start*/
@@ -279,6 +279,8 @@ table {
     a.nav-link{
        font-size: 10px;
     }
+}
+
 @media (max-width: 1250px) {
     /* Adjust for smaller screens */
     .product {
@@ -289,9 +291,7 @@ table {
         width: 150px;
         height: 150px;
     }
-}
-@media (max-width: 1450px) {
-    /* Adjust for smaller screens */
+
     .processimg {
         height: 100px;
         width: 150px;
@@ -305,4 +305,4 @@ table {
     .prodDesc {
         display: none;
     }
-}}
+}
