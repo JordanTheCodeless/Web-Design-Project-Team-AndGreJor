@@ -19,9 +19,6 @@
 </head>
 <body>
 
- 
-
-
   <header>
     <!-- NavBar template from Bootstrap  -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top-mobile">
@@ -60,21 +57,33 @@
 </header>
   <div class="container">
     <div id="mainDivsContainer">
+      <main>
       <div class="GameScreen">
+
+
+        <h3>Quiz time! let us test what you have learnt</h3>
 
 
         <h3>Quiz time! let us test what you have learnt</h3>
         <br>
         
         <img id="GameOutputImg" src="" alt="Game screen Image">
+
+        <img id="GameOutputImg" src="" alt="Game screen Image">
         <br>
         <br>
         <div id="displayText">
           <p id="randomQuestion"></p>
+          <p id="randomQuestion"></p>
         </div>
  
         <p id="scoreCounter">Score: 0</p>
+
+        <p id="scoreCounter">Score: 0</p>
         <div id="gameAnswers">
+
+          <input type="button" id="buttonTrue" value="True" onclick="checkAnswer(true)">
+          <input type="button" id="buttonFalse" value="False" onclick="checkAnswer(false)">
 
           <input type="button" id="buttonTrue" value="True" onclick="checkAnswer(true)">
           <input type="button" id="buttonFalse" value="False" onclick="checkAnswer(false)">
@@ -98,8 +107,6 @@
               <p>x23521803@student.ncirl.ie</p>
             </div>
           </div>
-          <br><br>
-        </div>
       </footer>
     </div>
     <!-- bootstrap java don't delete -->
