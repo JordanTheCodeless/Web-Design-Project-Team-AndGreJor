@@ -35,7 +35,7 @@ body {
 #mainDivsContainer {
     background: hsl(0, 0%, 0%, 0.4);
     text-align: center;
-    font-family: 'Barlow', sans-serif; ;
+    font-family: 'Barlow', sans-serif;
     margin: 0 auto;
     /* targeting all written elements within the container */
     color: #FFFDFA;
@@ -102,6 +102,7 @@ body {
     font-size: 20px;
     border-radius: 15px;
     color: #FFFDFA;
+    cursor: pointer;
 }
 .paymentFormOne {
     background-color: rgba(84, 165, 51, 0.3);
@@ -172,8 +173,8 @@ table {
     margin: auto;
     margin-bottom: 25px;
     margin-top: 25px;
-    height: 230px;
-    width: 330px;
+    height: 35%;
+    width: 85%;
 }
 /*Process page CSS End*/
 /*Renew CSS Start*/
@@ -193,12 +194,26 @@ table {
     display: none;
 }
 #activeTxt {
-    text-align: center;
+    text-align: justify;
     padding: 30px;
-    background-color: rgba(134, 168, 133, 0.3);
-    margin: 60px auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
     width: 70%;
-    border: 2px solid grey;
+    border-radius: 15px;
+}
+.renewImgLeft{
+    float: left;
+    margin: 20px;
+    border-radius: 15px;
+    height: 20%;
+    width: 40%;
+}
+.renewImgRight{
+    float: right;
+    margin: 20px;
+    border-radius: 15px;
+    height: 20%;
+    width: 40%;
 }
 /*Renew CSS End*/
 /*Game CSS Start*/
@@ -279,6 +294,8 @@ table {
     a.nav-link{
        font-size: 10px;
     }
+}
+
 @media (max-width: 1250px) {
     /* Adjust for smaller screens */
     .product {
@@ -289,9 +306,7 @@ table {
         width: 150px;
         height: 150px;
     }
-}
-@media (max-width: 1450px) {
-    /* Adjust for smaller screens */
+
     .processimg {
         height: 100px;
         width: 150px;
@@ -305,4 +320,4 @@ table {
     .prodDesc {
         display: none;
     }
-}}
+}

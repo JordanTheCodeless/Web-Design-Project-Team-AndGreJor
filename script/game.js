@@ -5,61 +5,66 @@
 //   return tree;
 // }
 
-var TreesArray = [{ imgpath: '../images/Windmill.jpg', Ans: 'windmill'},
-{ imgpath: '../images/MultipleWindmills.jpg', Ans: 'windmills'},
-{ imgpath: '../images/SolarPanel.jpg', Ans: 'solarpanel'},
-{ imgpath: '../images/SolarFarm.jpg', Ans: 'solarfarm'},
-{ imgpath: '../images/Teacher1.jpg', Ans: 'teacherpoint'},
-{ imgpath:  '../images/Teacher2.jpg', Ans: 'teacherstudent'}];
+var dataArray = [{ imgpath: '../images/Windmill.jpg', text: 'windmill'},
+{ imgpath: '../images/MultipleWindmills.jpg', text: 'windmills'},
+{ imgpath: '../images/SolarPanel.jpg', text: 'solarpanel'},
+{ imgpath: '../images/SolarFarm.jpg', text: 'solarfarm'},
+{ imgpath: '../images/Teacher1.jpg', text: 'teacherpoint'},
+{ imgpath:  '../images/Teacher2.jpg', text: 'teacherstudent'}];
 
 var shownImg = document.getElementById("GameOutput")
 var nextBut = document.getElementById("nextBut")
-var userInput = document.getElementById("UserGuess")
-var ScoreDisplay = document.getElementById("Game")
+var scoreCounter = document.getElementById("scoreCounter")
+var gameAns = document.getElementById("GameAnswers")
 var score = 0
-var correctAns
+var currentEntry
 
 nextBut.addEventListener("click", nextImg)
+
 function nextImg() {
-    if (TreesArray.length > 0){
-        var ranInd = Math.floor(Math.random() * TreesArray.length);
-        var selectInd = TreesArray.splice(ranInd, 1)[0];
-        var selectImg = selectInd.imgpath;
-        // var selectAns = selectInd.Ans;
-        correctAns = selectInd.Ans
+  if (dataArray.length > 0) {
+    var randomIndex = Math.floor(Math.random() * dataArray.length);
+    currentEntry = dataArray.splice(randomIndex, 1)[0];
 
-        shownImg.src = selectImg;
-
-        userInput.value = ""
-        checker();
-        ScoreDisplay.innerHTML = "score:" +score
-        // const Dis = RanTreeArray(TreesArray)
-        // shownImg.src = Dis;
-}else{
-    // var lastInd = TreesArray[0]
-    // shownImg.src = lastInd.imgpath;
-    // document.getElementById("Game").innerHTML = lastInd.Ans;
-    nextBut.disabled = true;
-}
-}
-
-function checker() {
-  var Guess = userInput.value
-    if (Guess === correctAns){
-      score++
-      scoreUpdate();
+    shownImg.src = currentEntry.imgpath;
+    document.getElementById("randomGenerated").innerText = currentEntry.text;
+ 
+    // Reset radio buttons
+    var radioButtons = document.getElementsByName("yesOrNo");
+    for (var i = 0; i < radioButtons.length; i++) {
+      radioButtons[i].checked = false;
     }
+ 
+    // Update score display
+    scoreCounter.innerText = "Score: " + sc
+}else{
+    nextBut.disabled = true;
+  }
 }
 
-function scoreUpdate() {
-  ScoreDisplay.innerHTML = "you got " +score+ " correct";
-}
-document.addEventListener("DOMContentLoaded", function (){
-  nextImg();
-})
+function checkAnswer() {
+  var radioButtons = document.getElementsByName("yesOrNo");
+ 
+  for (var i = 0; i < radioButtons.length; i++) {
+    if (radioButtons[i].checked) {
+      var userAnswer = radioButtons[i].value.toLowerCase();
+      var correctAnswer = currentEntry.text.toLowerCase().replace(/\s/g, '');
 
-// while (TreesArray.length > 1){
-//     const Dis = RanTreeArray(TreesArray);
-// }
-// const noImg = TreesArray(0);
-// document.getElementById("GameOutput").src =  Dis;
+      if (userAnswer === correctAnswer) {
+        score++;
+      } else {
+        score--;
+      }
+        // Update score display
+        scoreCounter.innerText = "Score: " + score;
+        break;
+        }
+      }
+    }
+    
+document.addEventListener("DOMContentLoaded", function () {
+nextImg();
+});
+
+// Add an event listener to the radio buttons
+gameAnswers.addEventListener("change", checkAnswer);
