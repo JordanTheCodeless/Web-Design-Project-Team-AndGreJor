@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Barlow&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
   <!-- Bootstrap link -->
+  <!-- bootstrap java don't delete -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="../styles/style.css">
@@ -17,8 +19,9 @@
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
   crossorigin="anonymous"></script>
+  <!-- JS Deferred -->
+  <script defer src="../script/game.js"></script>
   <title>Interact</title>
-  <!-- JS Deferred --> 
 </head>
 <body>
 
@@ -66,14 +69,14 @@
 
         <h3>Quiz time! let us test what you have learnt</h3>
         <br>
-        
-        <img id="GameOutputImg" src="" alt="Game screen Image">
+
+        <img id="GameOutputImg" src="data:," alt="Game screen Image">
         <br>
         <br>
         <div id="displayText">
           <p id="randomQuestion"></p>
         </div>
- 
+
         <p id="scoreCounter">Score: 0</p>
         <div id="gameAnswers">
 
@@ -81,6 +84,7 @@
           <input type="button" id="buttonFalse" value="False" onclick="checkAnswer(false)">
         </div>
       </div>
+      </main>
         <hr>
       <footer>
         <div id="contact">
@@ -99,12 +103,9 @@
               <p>x23521803@student.ncirl.ie</p>
             </div>
           </div>
+        </div>
       </footer>
     </div>
-    <!-- bootstrap java don't delete -->
-    <script src="../script/game.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
+  </div>
 </body>
 </html>
