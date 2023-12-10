@@ -192,6 +192,7 @@ table {
 /*Process page CSS End*/
 
 /*Renew CSS Start*/
+/* this makse sure the topics on the renew are spaced and move under each other when the screen is resized */
 .TitlesRenew {
     display: flex;
     flex-wrap: wrap;
@@ -199,11 +200,13 @@ table {
     align-items: center;
     padding: 10px;
 }
+/* this makes the topic titles appear clickabel when you hover over them and remove any additional effects that comes with it being clickable*/
 .TitlesEle {
     cursor: pointer;
     text-decoration: none;
     color: #FFFDFA;
 }
+/*  */
 .hidden {
     display: none;
 }
