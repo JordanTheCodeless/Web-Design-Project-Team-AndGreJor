@@ -3,4 +3,3 @@ function active(topChoice) {
     var topText = chosenTop.innerHTML;
     document.getElementById("activeTxt").innerHTML = topText
 }
-

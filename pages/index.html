@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,17 +17,15 @@
         crossorigin="anonymous"></script>
     <title>Homepage</title>
 </head>
-
 <body>
-
     <header>
         <!-- NavBar template from Bootstrap  -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top-mobile">
             <!-- container to keep  -->
             <div class="container nav-container">
                 <div id="navbar-brand">
                     <a class="navbar-brand" href="index.html">GigaEnergy</a>
-                    
+                    <a class="navbar-brand" href="index.html"><img src="../images/mobile-logo.png" alt="Mobile Logo"></a>
                 </div>
                 <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -56,43 +53,6 @@
                 </div>
             </div>
         </nav>
-         <!-- NavBar template from Bootstrap  -->
-         <!-- This navbar is for mobile version of page  -->
-         <nav class="navbar fixed-top navbar-expand-lg navbar-dark mobile-version">
-            <!-- container to keep  -->
-            <div class="container nav-container">
-                <div id="navbar-brand">
-                    <a class="navbar-brand-mobile" href="index.html"><img src="../images/mobile-logo.png"
-                            alt="Mobile logo"></a>
-                </div>
-                
-                <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="./renewable.html">Renewable</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="./products.html">Products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./interact.html">Interact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./process.html">Process</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
     </header>
     <!-- Bootstrap container -->
     <div class="container">
@@ -113,26 +73,14 @@
                     </div>
                 </div>
             </main>
-            
                 <div id="newsLetter">
                     <h4>Our Newsletter</h4>
                     <p>If you would like to be informed of cost-saving solutions and stories related to sustainability
-                        from all corners of the globe you can click 
+                        from all corners of the globe you can click
                         <a id="newsletterLink"
                             href="./newsletter.html">This Link !</a>
-                    </p>       
-                    <footer class="py-3 my-4">
-                        <ul class="nav justify-content-center pb-3 mb-3 ">
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Home</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Features</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">Pricing</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light">FAQs</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-light ">About</a></li>
-                        </ul>
-                        <p class="text-center text-body-light">© 2024 GigaEnergy, Inc</p>
-                    </footer>
-                </div>
-
+                    </p>
+            <footer>
               <hr>
                 <div id="contact">
                     <h3>Contact Information</h3>
@@ -152,17 +100,11 @@
                         </div>
                     </div>
                     <br>
-                    <br>
+                    <p class="text-center text-body-light">© 2024 GigaEnergy, Inc</p>
                 </div>
             </footer>
-
-
         </div>
+       </div>
     </div>
-
-
-
-
 </body>
-
 </html>

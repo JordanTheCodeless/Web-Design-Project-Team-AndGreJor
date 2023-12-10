@@ -20,7 +20,6 @@ var score = 0
 var correctAns
 
 nextBut.addEventListener("click", nextImg)
-
 function nextImg() {
     if (TreesArray.length > 0){
         var ranInd = Math.floor(Math.random() * TreesArray.length);
@@ -61,8 +60,6 @@ document.addEventListener("DOMContentLoaded", function (){
 
 // while (TreesArray.length > 1){
 //     const Dis = RanTreeArray(TreesArray);
-
 // }
-  
 // const noImg = TreesArray(0);
 // document.getElementById("GameOutput").src =  Dis;
