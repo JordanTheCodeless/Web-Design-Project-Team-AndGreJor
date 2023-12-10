@@ -33,7 +33,7 @@ if (currentQuestion < questionsArray.length) {
     document.getElementById("randomQuestion").innerHTML = questionsArray[currentQuestion];
   } else {
     // In case all questions have been answered
-    document.getElementById("randomQuestion").innerHTML = "Game Over! the final score was: " + score;
+    document.getElementById("randomQuestion").innerHTML = "Game Over!";
 }
 }
 
