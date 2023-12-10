@@ -198,6 +198,7 @@ table {
     background-color: rgba(134, 168, 133, 0.3);
     margin: 60px auto;
     width: 70%;
+    border: 2px solid grey;
 }
 /*Renew CSS End*/
 /*Game CSS Start*/
