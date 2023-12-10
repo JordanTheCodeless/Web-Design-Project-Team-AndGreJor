@@ -1,36 +1,63 @@
-function RanTreeArray(arr) {
-  const RanTree = Math.floor(Math.random() * arr.length);
-  const tree = arr[RanTree];
-  arr.splice(RanTree, 1);
-  return tree;
-}
-const TreesArray = [{ imgpath: '../images/Windmill.jpg', Ans: 'windmill'},
+// function RanTreeArray(arr) {
+//   const RanTree = Math.floor(Math.random() * arr.length);
+//   const tree = arr[RanTree];
+//   arr.splice(RanTree, 1);
+//   return tree;
+// }
+
+var TreesArray = [{ imgpath: '../images/Windmill.jpg', Ans: 'windmill'},
 { imgpath: '../images/MultipleWindmills.jpg', Ans: 'windmills'},
 { imgpath: '../images/SolarPanel.jpg', Ans: 'solarpanel'},
 { imgpath: '../images/SolarFarm.jpg', Ans: 'solarfarm'},
 { imgpath: '../images/Teacher1.jpg', Ans: 'teacherpoint'},
 { imgpath:  '../images/Teacher2.jpg', Ans: 'teacherstudent'}];
-const shownImg = document.getElementById("GameOutput")
-const nextBut = document.getElementById("nextBut")
+
+var shownImg = document.getElementById("GameOutput")
+var nextBut = document.getElementById("nextBut")
+var userInput = document.getElementById("UserGuess")
+var ScoreDisplay = document.getElementById("Game")
+var score = 0
+var correctAns
+
 nextBut.addEventListener("click", nextImg)
 function nextImg() {
-    if (TreesArray.length > 1){
-        const ranInd = Math.floor(Math.random() * TreesArray.length);
-        const selectInd = TreesArray.splice(ranInd, 1)[0];
-        const selectImg = selectInd.imgpath;
-        const selectAns = selectInd.Ans;
+    if (TreesArray.length > 0){
+        var ranInd = Math.floor(Math.random() * TreesArray.length);
+        var selectInd = TreesArray.splice(ranInd, 1)[0];
+        var selectImg = selectInd.imgpath;
+        // var selectAns = selectInd.Ans;
+        correctAns = selectInd.Ans
+
         shownImg.src = selectImg;
-        document.getElementById("Game").innerHTML = selectAns
+
+        userInput.value = ""
+        checker();
+        ScoreDisplay.innerHTML = "score:" +score
         // const Dis = RanTreeArray(TreesArray)
         // shownImg.src = Dis;
 }else{
-    const lastInd = TreesArray[0]
-    shownImg.src = lastInd.imgpath;
-    document.getElementById("Game").innerHTML = lastInd.Ans;
+    // var lastInd = TreesArray[0]
+    // shownImg.src = lastInd.imgpath;
+    // document.getElementById("Game").innerHTML = lastInd.Ans;
     nextBut.disabled = true;
 }
 }
-nextImg();
+
+function checker() {
+  var Guess = userInput.value
+    if (Guess === correctAns){
+      score++
+      scoreUpdate();
+    }
+}
+
+function scoreUpdate() {
+  ScoreDisplay.innerHTML = "you got " +score+ " correct";
+}
+document.addEventListener("DOMContentLoaded", function (){
+  nextImg();
+})
+
 // while (TreesArray.length > 1){
 //     const Dis = RanTreeArray(TreesArray);
 // }
