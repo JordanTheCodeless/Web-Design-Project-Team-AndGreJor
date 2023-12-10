@@ -21,13 +21,13 @@
 <body>
     <header>
         <!-- NavBar template from Bootstrap  -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top-mobile">
             <!-- container to keep  -->
-            <div class="container">
+            <div class="container nav-container">
                 <div id="navbar-brand">
                     <a class="navbar-brand" href="index.html">GigaEnergy</a>
-                    <a class="navbar-brand-mobile" href="index.html"><img src="../images/mobile-logo.png"
-                            alt="Mobile logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="../images/mobile-logo.png"
+                            alt="Mobile Logo"></a>
                 </div>
                 <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -56,11 +56,10 @@
             </div>
         </nav>
     </header>
-    <!-- <hr>     -->
     <div class="container">
         <!--Used fluid containers to use the full width of the page-->
-        <br>
         <div id="mainDivsContainer">
+            <main>
             <div class="row justify-content-center prodCategory">
                 <div class="col-md-7 col-sm-12">
                     <br>
@@ -217,15 +216,16 @@
                 </div>
             </div>
             <hr>
-            <footer>
-                <div id="newsLetter">
-                    <h4>Our Newsletter</h4>
-                    <p>If you would like to be informed of cost-saving solutions and stories related to sustainability
-                        from all corners of the globe you can click
-                        <a id="newsletterLink"
-                            href="./newsletter.html">This Link !</a>
-                    </p>
-                <hr>
+            <div id="newsLetter">
+                <h4>Our Newsletter</h4>
+                <p>If you would like to be informed of cost-saving solutions and stories related to sustainability
+                    from all corners of the globe you can click
+                    <a id="newsletterLink"
+                    href="./newsletter.html">This Link !</a>
+                </p>
+            </div>
+            </main>
+                <footer>
                 <div id="contact">
                     <h3>Contact Information</h3><br>
                     <div class="row justify-content-center">

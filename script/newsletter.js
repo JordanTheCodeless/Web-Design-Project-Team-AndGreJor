@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
    var firstName = document.getElementById("firstName").value;
    var secondName = document.getElementById("secondName").value;
    var userEmail = document.getElementById("userEmail").value;
-   var userEmail2 = document.getElementById("userEmail2").value;
+   var userEmailConfirm = document.getElementById("userEmailConfirm").value;
    var password = document.getElementById("password").value;
    var confirmPassword = document.getElementById("confirmPassword").value;
    //  Here I use If else to check for each validation
@@ -45,10 +45,10 @@ document.addEventListener('DOMContentLoaded', function() {
      resetField("userEmail");
 // If users emails are not the same
    }
-   else if (userEmail !== userEmail2) {
+   else if (userEmail !== userEmailConfirm) {
      alert("Emails do not match.");
      resetField("userEmail");
-     resetField("userEmail2");
+     resetField("userEmailConfirm");
    }
 //    Here I will alert the user if their password doesnt have 8 letters a special character or a number
    else if (password.length < 8 || (!/[!@£$%^&*{}:.,?|<>]/.test(password)) || (!/\d/.test(password))) {
